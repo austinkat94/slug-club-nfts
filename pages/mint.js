@@ -174,7 +174,7 @@ bananas out known to man." key="twdesc" />
                   <span className="flex  text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">SLUGGIES!</span>
     
                 </div>
-                {saleStarted ? 
+                {!saleStarted ? 
                 <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4  text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
                   : <button className="mt-4  text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             

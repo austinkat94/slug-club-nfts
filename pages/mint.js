@@ -20,7 +20,7 @@ export default function Mint() {
 
   const [totalSupply, setTotalSupply] = useState(0)
 
-  const [saleStarted, setSaleStarted] = useState(false)
+  const [saleStarted, setSaleStarted] = useState(true)
 
   const [slugPrice, setSlugPrice] = useState(0)
 

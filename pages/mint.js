@@ -47,7 +47,7 @@ export default function Mint() {
         let wallet = accounts[0]
         setWalletAddress(wallet)
         setSignedIn(true)
-        callContractData(wallet)
+        //callContractData(wallet)
 
   })
   .catch(function (error) {
@@ -71,10 +71,10 @@ export default function Mint() {
 
     const salebool = await slugContract.methods.saleIsActive().call() 
     //console.log("saleisActive" , salebool)
-    //setSaleStarted(salebool)
+    setSaleStarted(salebool)
 
     const totalSupply = await slugContract.methods.totalSupply().call() 
-    //setTotalSupply(totalSupply)
+    setTotalSupply(totalSupply)
 
     const slugPrice = await slugContract.methods.slugPrice().call() 
     //console.log(slugPrice)

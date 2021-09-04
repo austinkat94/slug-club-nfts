@@ -72,12 +72,12 @@ export default function Mint() {
     console.log("saleisActive" , salebool)
     setSaleIsActive(salebool)
 
-    //const totalSupply = await slugContract.methods.totalSupply().call() 
-    //setTotalSupply(totalSupply)
+    const totalSupply = await slugContract.methods.totalSupply().call() 
+    setTotalSupply(totalSupply)
 
-    //const slugPrice = await slugContract.methods.slugPrice().call() 
-    //console.log(slugPrice)
-    //setSlugPrice(slugPrice)
+    const slugPrice = await slugContract.methods.slugPrice().call() 
+    console.log(slugPrice)
+    setSlugPrice(slugPrice)
    
   }
   
@@ -87,9 +87,9 @@ export default function Mint() {
       const price = Number(slugPrice)  * how_many_sluggies 
 
       const gasAmount = await slugContract.methods.mintSluggies(how_many_sluggies).estimateGas({from: walletAddress, value: price})
-      //console.log("estimated gas",gasAmount)
+      console.log("estimated gas",gasAmount)
 
-      //console.log({from: walletAddress, value: price})
+      console.log({from: walletAddress, value: price})
 
       slugContract.methods
             .mintSluggies(how_many_sluggies)

@@ -66,17 +66,19 @@ export default function Mint() {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
     const slugContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    console.log(slugContract)
     setSlugContract(slugContract)
 
     const salebool = await slugContract.methods.saleIsActive().call() 
-    // console.log("saleisActive" , salebool)
+    console.log("saleisActive" , salebool)
     setSaleStarted(salebool)
 
     const totalSupply = await slugContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
 
-    const bananaPrice = await slugContract.methods.bananaPrice().call() 
-    setSlugPrice(bananaPrice)
+    const slugPrice = await slugContract.methods.slugPrice().call() 
+    console.log(slugPrice)
+    setSlugPrice(slugPrice)
    
   }
   

@@ -85,8 +85,8 @@ const slugApi = async(req, res) => {
               "value": trait["Shell"]
             },
             {
-              "trait_type": "Expressions",
-              "value": trait["Expressions"]
+              "trait_type": "Expression",
+              "value": trait["Expression"]
             },
             {
               "trait_type": "Attributes",

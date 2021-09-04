@@ -20,7 +20,7 @@ export default function Mint() {
 
   const [totalSupply, setTotalSupply] = useState(0)
 
-  const [saleStarted, setSaleStarted] = useState(true)
+  const [saleIsActive, setSaleIsActive] = useState(false)
 
   const [slugPrice, setSlugPrice] = useState(0)
 
@@ -71,7 +71,7 @@ export default function Mint() {
 
     const salebool = await slugContract.methods.saleIsActive.call() 
     console.log("saleisActive" , salebool)
-    //setSaleStarted(salebool)
+    setSaleIsActive(salebool)
 
     //const totalSupply = await slugContract.methods.totalSupply().call() 
     //setTotalSupply(totalSupply)

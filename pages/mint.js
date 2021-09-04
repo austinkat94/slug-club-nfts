@@ -65,7 +65,7 @@ export default function Mint() {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
-    const slugContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    const slugContract = new web3.eth.Contract(ABI, ADDRESS)
     console.log(slugContract)
     setSlugContract(slugContract)
 

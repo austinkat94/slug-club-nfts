@@ -69,7 +69,7 @@ export default function Mint() {
     console.log(slugContract)
     setSlugContract(slugContract)
 
-    const salebool = await slugContract.methods.saleIsActive().call() 
+    const salebool = await slugContract.methods.saleIsActive().call({from:wallet}) 
     console.log("saleisActive" , salebool)
     setSaleIsActive(salebool)
 

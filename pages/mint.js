@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Web3 from "web3";
 import { useState, useEffect } from 'react';
 
-import {ADDRESS, ABI} from "../config.js"
+import {ADDRESS, ABI} from "../config.js";
 
 export default function Mint() {
 
@@ -63,13 +63,12 @@ export default function Mint() {
   }
   
   async function callContractData(wallet) {
-    // let balance = await web3.eth.getBalance(wallet);
-    // setWalletBalance(balance)
+
     const slugContract = new web3.eth.Contract(ABI, ADDRESS)
     console.log(slugContract)
     setSlugContract(slugContract)
 
-    const salebool = await slugContract.methods.saleIsActive().call({from:wallet}) 
+    const salebool = await slugContract.methods.saleIsActive().call().then(console.log)
     console.log("saleisActive" , salebool)
     setSaleIsActive(salebool)
 

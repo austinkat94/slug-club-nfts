@@ -3,7 +3,7 @@
 export const INFURA_ADDRESS = "https://rinkeby.infura.io/v3/9e8464fa68004511ad27565fcc24ecb7"
 
 
-export const ADDRESS = "0xC31FbCC91D9d575b1944f48a7E0d9D76632EbeEc"
+export const ADDRESS = "0xF38D3c936B14586bc50B71983351f0D34266371f"
 
 export const ABI = [
 	{

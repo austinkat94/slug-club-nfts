@@ -47,7 +47,7 @@ export default function Mint() {
         let wallet = accounts[0]
         setWalletAddress(wallet)
         setSignedIn(true)
-        //callContractData(wallet)
+        callContractData(wallet)
 
   })
   .catch(function (error) {

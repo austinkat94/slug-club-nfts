@@ -69,7 +69,7 @@ const slugApi = async(req, res) => {
         "name": tokenName,
         "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
-        "image": `https://gateway.pinata.cloud/ipfs/${trait["imageIPFS"]}`,
+        "image": `https://slugclub.mypinata.cloud/ipfs/${trait["imageIPFS"]}`,
         "external_url":"https://www.boringbananas.co",
         "attributes": [          
             {

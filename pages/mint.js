@@ -176,8 +176,8 @@ bananas out known to man." key="twdesc" />
     
                 </div>
                 {saleIsActive ? 
-                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-gray-500 p-2 ">MINT {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
-                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-black hover:text-gray-500 p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
+                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">MINT {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-black hover:text-green-400 p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             
               }
                 

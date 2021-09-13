@@ -44,8 +44,8 @@ bananas out known to man." key="twdesc" />
           <div className="mt-6 border-b-2 py-6">
             <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
                   <div className="lg:w-1/2 w-3/4">
-                    <h1 className="text-7xl text-black ">EVERYONE, meet <br/><span className="text-green-700">sluggies</span></h1>
-                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl">The</span> <span className="text-green-700 text-5xl">Slug</span> <span className="text-5xl">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-green-700 text-5xl">Outrageous </span><span className="text-5xl ">and</span><span className="text-green-700 text-5xl "> Hilarious</span> <br/>slugs out there.
+                    <h1 className="text-7xl text-black Poppitandfinchsans">EVERYONE, meet <br/><span className="text-green-700">sluggies</span></h1>
+                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl Poppitandfinchsans">The</span> <span className="text-green-700 Poppitandfinchsans text-5xl">Slug</span> <span className="text-5xl Poppitandfinchsans">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-green-700 Poppitandfinchsans text-5xl">Outrageous </span><span className="text-5xl Poppitandfinchsans">and</span><span className="text-green-700 Poppitandfinchsans text-5xl "> Hilarious</span> <br/>slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 30 September 2021. 2pm EST. <br />‍

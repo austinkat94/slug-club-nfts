@@ -57,7 +57,7 @@ bananas out known to man." key="twdesc" />
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-gray-500 p-2 ">GO TO MINTING PAGE!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">GO TO MINTING PAGE!</a>
                 
                 
             </div> 

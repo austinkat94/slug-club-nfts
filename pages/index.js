@@ -29,9 +29,9 @@ bananas out known to man." key="twdesc" />
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
             <a href="/" className=""><img src="images/Hola.gif" width="108" alt="" className="logo-image" /></a>
             <nav className="flex flex-wrap flex-row justify-around">
-              <a href="#about" className="text-4xl text-black hover:text-gray m-6">About</a>
-              <a href="/mint" className="text-4xl text-black hover:text-gray m-6">MINT!</a>
-              <a href="#team" className="text-4xl text-black hover:text-gray m-6">Team</a>
+              <a href="#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
+              <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">MINT!</a>
+              <a href="#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
             </nav>
              
           </div>
@@ -57,7 +57,7 @@ bananas out known to man." key="twdesc" />
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-black p-2 ">GO TO MINTING PAGE!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-gray-500 p-2 ">GO TO MINTING PAGE!</a>
                 
                 
             </div> 

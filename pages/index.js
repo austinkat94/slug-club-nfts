@@ -29,9 +29,9 @@ bananas out known to man." key="twdesc" />
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
             <a href="/" className=""><img src="images/Hola.gif" width="108" alt="" className="logo-image" /></a>
             <nav className="flex flex-wrap flex-row justify-around">
-              <a href="#about" className="text-4xl text-black hover:text-grey m-6">About</a>
-              <a href="/mint" className="text-4xl text-black hover:text-grey m-6">MINT!</a>
-              <a href="#team" className="text-4xl text-black hover:text-grey m-6">Team</a>
+              <a href="#about" className="text-4xl text-black hover:text-gray m-6">About</a>
+              <a href="/mint" className="text-4xl text-black hover:text-gray m-6">MINT!</a>
+              <a href="#team" className="text-4xl text-black hover:text-gray m-6">Team</a>
             </nav>
              
           </div>
@@ -44,8 +44,8 @@ bananas out known to man." key="twdesc" />
           <div className="mt-6 border-b-2 py-6">
             <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
                   <div className="lg:w-1/2 w-3/4">
-                    <h1 className="text-7xl text-black ">EVERYONE, meet <br/><span className="text-green-900">sluggies</span></h1>
-                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl">The</span> <span className="text-green-900 text-5xl">Slug</span> <span className="text-5xl">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-green-900 text-5xl">Outrageous </span><span className="text-5xl ">and</span><span className="text-green-900 text-5xl "> Hilarious</span> <br/>slugs out there.
+                    <h1 className="text-7xl text-black ">EVERYONE, meet <br/><span className="text-green-700">sluggies</span></h1>
+                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl">The</span> <span className="text-green-700 text-5xl">Slug</span> <span className="text-5xl">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-green-700 text-5xl">Outrageous </span><span className="text-5xl ">and</span><span className="text-green-700 text-5xl "> Hilarious</span> <br/>slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 30 September 2021. 2pm EST. <br />‍
@@ -81,19 +81,19 @@ bananas out known to man." key="twdesc" />
                 </div>
               
               <div id="team" className="mx-12 my-16 ">
-                <h2 className="text-7xl text-center text-green-900 my-4">SLUG CLUB TEAM</h2>
+                <h2 className="text-7xl text-center text-green-700 my-4">SLUG CLUB TEAM</h2>
                 <div className="flex justify-around flex-wrap">
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
                     <div className="cards-image-mask"><img src="/images/Vee.png" width="360px" alt="" className="cards-image" /></div>
-                    <h3 className="my-4 text-center text-5xl text-center text-green-900">KAT</h3>
+                    <h3 className="my-4 text-center text-5xl text-center text-green-700">KAT</h3>
                   </div>
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
                     <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
-                    <h3 className="my-4 text-center text-5xl text-center text-green-900">BEE</h3>
+                    <h3 className="my-4 text-center text-5xl text-center text-green-700">BEE</h3>
                 </div>
                 <div className="flex flex-col  my-6" style={{width:"360px"}}>
                     <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
-                    <h3 className="my-4 text-center text-5xl text-center text-green-900">RIA</h3>
+                    <h3 className="my-4 text-center text-5xl text-center text-green-700">RIA</h3>
                 </div>
               </div>   
           </div>  

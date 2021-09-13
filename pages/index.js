@@ -91,6 +91,10 @@ bananas out known to man." key="twdesc" />
                     <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
                     <h3 className="my-4 text-center text-5xl text-center text-blau">BEE</h3>
                 </div>
+                <div className="flex flex-col  my-6" style={{width:"360px"}}>
+                    <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
+                    <h3 className="my-4 text-center text-5xl text-center text-blau">RIA</h3>
+                </div>
               </div>   
           </div>  
         </div>

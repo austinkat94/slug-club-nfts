@@ -29,9 +29,9 @@ bananas out known to man." key="twdesc" />
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
             <a href="/" className=""><img src="images/Hola.gif" width="108" alt="" className="logo-image" /></a>
             <nav className="flex flex-wrap flex-row justify-around">
-              <a href="#about" className="text-4xl text-black hover:text-black m-6">About</a>
-              <a href="/mint" className="text-4xl text-black hover:text-black m-6">MINT!</a>
-              <a href="#team" className="text-4xl text-black hover:text-black m-6">Team</a>
+              <a href="#about" className="text-4xl text-black hover:text-gray m-6">About</a>
+              <a href="/mint" className="text-4xl text-black hover:text-gray m-6">MINT!</a>
+              <a href="#team" className="text-4xl text-black hover:text-gray m-6">Team</a>
             </nav>
              
           </div>
@@ -49,7 +49,7 @@ bananas out known to man." key="twdesc" />
                     </p>
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 30 September 2021. 2pm EST. <br />‍
-                    <span className="text-white black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
+                    <span className="text-black black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
                     <iframe src="https://free.timeanddate.com/countdown/i7vcex5b/n107/cf11/cm0/cu4/ct0/cs1/ca2/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/iso2021-06-29T21:00:00" allowtransparency="true" frameBorder="0" width="425" height="25"></iframe>
 
                   </div>
@@ -57,7 +57,7 @@ bananas out known to man." key="twdesc" />
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-blau  text-black hover:text-black p-2 ">GO TO MINTING PAGE!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">GO TO MINTING PAGE!</a>
                 
                 
             </div> 

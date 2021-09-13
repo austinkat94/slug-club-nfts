@@ -138,8 +138,8 @@ bananas out known to man." key="twdesc" />
               <a href="/#about" className="text-4xl text-black hover:text-gray m-6">About</a>
               <a href="/mint" className="text-4xl text-black hover:text-gray m-6">Mint!</a>
               <a href="/#team" className="text-4xl text-black hover:text-gray m-6">Team</a>
-              <a href="https://twitter.com/boringbananasco" className="text-4xl  hover:text-gray m-6 text-green-900">TWITTER</a>
-              <a href="https://discord.gg/8Wk9Hp6UyV" className="text-4xl  hover:text-gray m-6 text-green-900">DISCORD</a>
+              <a href="https://twitter.com/boringbananasco" className="text-4xl  hover:text-gray m-6 text-green-700">TWITTER</a>
+              <a href="https://discord.gg/8Wk9Hp6UyV" className="text-4xl  hover:text-gray m-6 text-green-700">DISCORD</a>
             </nav>
              
           </div>
@@ -157,7 +157,7 @@ bananas out known to man." key="twdesc" />
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL SLUGGIES MINTED:  <span className="text-green-900 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
+                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL SLUGGIES MINTED:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
                   <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">GIMME</span>

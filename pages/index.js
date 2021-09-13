@@ -29,9 +29,9 @@ bananas out known to man." key="twdesc" />
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
             <a href="/" className=""><img src="images/Hola.gif" width="108" alt="" className="logo-image" /></a>
             <nav className="flex flex-wrap flex-row justify-around">
-              <a href="#about" className="text-4xl text-white hover:text-black m-6">About</a>
-              <a href="/mint" className="text-4xl text-white hover:text-black m-6">MINT!</a>
-              <a href="#team" className="text-4xl text-white hover:text-black m-6">Team</a>
+              <a href="#about" className="text-4xl text-black hover:text-black m-6">About</a>
+              <a href="/mint" className="text-4xl text-black hover:text-black m-6">MINT!</a>
+              <a href="#team" className="text-4xl text-black hover:text-black m-6">Team</a>
             </nav>
              
           </div>
@@ -44,12 +44,12 @@ bananas out known to man." key="twdesc" />
           <div className="mt-6 border-b-2 py-6">
             <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
                   <div className="lg:w-1/2 w-3/4">
-                    <h1 className="text-7xl text-white ">EVERYONE, meet <br/><span className="text-blau">sluggies</span></h1>
-                    <p className="text-2xl text-white my-6">Here at <span className="text-5xl">The</span> <span className="text-blau text-5xl">Slug</span> <span className="text-5xl">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-blau text-5xl">Outrageous </span><span className="text-5xl ">and</span><span className="text-blau text-5xl "> Hilarious</span> <br/>slugs out there.
+                    <h1 className="text-7xl text-black ">EVERYONE, meet <br/><span className="text-blau">sluggies</span></h1>
+                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl">The</span> <span className="text-blau text-5xl">Slug</span> <span className="text-5xl">Club</span>, we specialize in the world's <span className="text-span-2 font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-blau text-5xl">Outrageous </span><span className="text-5xl ">and</span><span className="text-blau text-5xl "> Hilarious</span> <br/>slugs out there.
                     </p>
-                    <p className="text-2xl text-white my-6">
+                    <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 30 September 2021. 2pm EST. <br />‍
-                    <span className="text-white text-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
+                    <span className="text-white black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
                     <iframe src="https://free.timeanddate.com/countdown/i7vcex5b/n107/cf11/cm0/cu4/ct0/cs1/ca2/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/iso2021-06-29T21:00:00" allowtransparency="true" frameBorder="0" width="425" height="25"></iframe>
 
                   </div>
@@ -57,7 +57,7 @@ bananas out known to man." key="twdesc" />
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">GO TO MINTING PAGE!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-blau  text-black hover:text-black p-2 ">GO TO MINTING PAGE!</a>
                 
                 
             </div> 

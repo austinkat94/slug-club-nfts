@@ -64,7 +64,7 @@ bananas out known to man." key="twdesc" />
             </div>
                 
                 <div id="gallery" className="   mx-6 py-6">
-                    <h2 className="text-green-900 text-7xl text-center">SIGNATURE SLUGGIES</h2>
+                    <h2 className="text-green-700 text-7xl text-center">SIGNATURE SLUGGIES</h2>
                   <div className="flex flex-wrap  items-center mx-6   py-6 ">
                     <div className="md:w-1/2">
                       <div className=" border-blue-300 p-2"><img src="images/gallery1.jpeg" alt="" width="600px" className="feature-image"/></div>

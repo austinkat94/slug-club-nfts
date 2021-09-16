@@ -18,9 +18,8 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
         <meta property="twitter:domain" content="boringbananas.co" key="twdomain" />
         <meta property="twitter:url" content="https://boringbananas.co/" key="twurl" />
-        <meta name="twitter:title" content="Boring Bananas Co." key="twtitle" />
-        <meta name="twitter:description" content="Here at boring Bananas company, we specialise in the world's finest digital bananas. We've put together a team spanning 3 continents, to bring you some of the most ‍NUTRITIOUS and DELICIOUS
-bananas out known to man." key="twdesc" />
+        <meta name="twitter:title" content="The Slug Club" key="twtitle" />
+        <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
         <meta name="twitter:image" content="https://boringbananas.co/images/Hola.gif" key="twimage" />
       </Head>
 

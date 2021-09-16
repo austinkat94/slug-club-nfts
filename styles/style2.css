@@ -47,3 +47,7 @@ font-display: swap;
 .bg-blau {
     background-color: #13c5eb;
 }
+
+.logo-image{
+    border-radius: 50%;
+}

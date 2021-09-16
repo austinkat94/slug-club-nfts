@@ -48,10 +48,7 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">Here at <span className="text-5xl Poppitandfinchsans">The</span> <span className="text-green-700 Poppitandfinchsans text-5xl">Slug</span> <span className="text-5xl Poppitandfinchsans">Club</span>, we specialize in the world's <span className="text-span-2 Poppitandfinchsans font-bold">finest digital slugs</span>.<br />‍<br />We&#x27;re a brother and sister team, bringing you all the most <br/>‍<span className="text-green-700 Poppitandfinchsans text-5xl">Outrageous </span><span className="text-5xl Poppitandfinchsans">and</span><span className="text-green-700 Poppitandfinchsans text-5xl "> Hilarious</span> <br/>slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
-                    <strong>LAUNCH DATE:</strong> 30 September 2021. 2pm EST. <br />‍
                     <span className="text-black black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
-                    <iframe src="https://free.timeanddate.com/countdown/i7vcex5b/n107/cf11/cm0/cu4/ct0/cs1/ca2/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/iso2021-06-29T21:00:00" allowtransparency="true" frameBorder="0" width="425" height="25"></iframe>
-
                   </div>
                   <img src="images/Traits4.gif" alt="" width="400px" className="feature-image"/>
             </div>

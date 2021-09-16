@@ -16,8 +16,8 @@ export default function Home() {
         <meta property="og:site_name" content="https://boringbananas.co/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
-        <meta property="twitter:domain" content="boringbananas.co" key="twdomain" />
-        <meta property="twitter:url" content="https://boringbananas.co/" key="twurl" />
+        <meta property="twitter:domain" content="SlugClubNFT" key="twdomain" />
+        <meta property="twitter:url" content="https://twitter.com/SlugclubNFT" key="twurl" />
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
         <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
         <meta name="twitter:image" content="https://boringbananas.co/images/slugclub.png" key="twimage" />

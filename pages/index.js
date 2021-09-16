@@ -31,6 +31,7 @@ export default function Home() {
               <a href="#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
               <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">MINT!</a>
               <a href="#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
+              <a href="https://twitter.com/boringbananasco" className="text-4xl  hover:text-gray-500 m-6 text-green-700">TWITTER</a>
             </nav>
              
           </div>

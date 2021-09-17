@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Boring Bananas Company</title>
+        <title>The Slug Club</title>
         <link rel="icon" href="/images/favicon.jpg" />
 
         <meta property="og:title" content="The Slug Club." key="ogtitle" />

@@ -77,22 +77,37 @@ const slugApi = async(req, res) => {
               "value": trait["Background"]
             },
             {
-              "trait_type": "Slug Base",
-              "value": trait["Slug Base"]
+              "trait_type": "Stomach",
+              "value": trait["Stomach"]
+            },
+            {
+              "trait_type": "Back",
+              "value": trait["Back"]
+            },
+            {
+              "trait_type": "Eyes",
+              "value": trait["Eyes"]
+            },
+            {
+              "trait_type": "Mouth",
+              "value": trait["Mouth"]
             },
             {
               "trait_type": "Shell",
               "value": trait["Shell"]
             },
             {
-              "trait_type": "Expression",
-              "value": trait["Expression"]
+              "trait_type": "Top Prop",
+              "value": trait["Top Prop"]
             },
             {
-              "trait_type": "Attributes",
-              "value": trait["Attributes"]
+              "trait_type": "Middle Prop",
+              "value": trait["Middle Prop"]
             },
-    
+            {
+              "trait_type": "Bottom Prop",
+              "value": trait["Bottom Prop"]
+            },
         ]
       }
       

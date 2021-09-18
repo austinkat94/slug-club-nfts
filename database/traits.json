@@ -1,0 +1,160 @@
+[
+    {
+        "tokenId": 0,
+        "imageIPFS": "QmNVvNLDgg8Gbgkz1VQYnSC9Nn6mRdJAJgxMqqftr1yfQP",
+        "Background": "07 wavy purp.png",
+        "Stomach": "1 lime.png",
+        "Back": "5 mint.png",
+        "Eyes": "4 wtf.png",
+        "Mouth": "08 duh.png",
+        "Shell": "15.png",
+        "Top Prop": "Untitled_Artwork 86.png"
+    },
+    {
+        "tokenId": 1,
+        "imageIPFS": "QmP8UPGrP5zbdp6HLunXhTqwEU4PB3zH9ytS9EMGcB9TDM",
+        "Background": "06 gold.png",
+        "Stomach": "1 lime.png",
+        "Back": "1 green.png",
+        "Eyes": "6 tired.png",
+        "Mouth": "03 sick.png",
+        "Shell": "08.png"
+    },
+    {
+        "tokenId": 2,
+        "imageIPFS": "QmSVFjLPVpFYVBhop7VA1eDjyxzxMnwEuAoRyexCuPRWTH",
+        "Background": "06 gold.png",
+        "Stomach": "1 lime.png",
+        "Back": "2 moss.png",
+        "Eyes": "1 regular.png",
+        "Mouth": "06 gummy.png",
+        "Shell": "17.png",
+        "Top Prop": "Untitled_Artwork 71.png"
+    },
+    {
+        "tokenId": 3,
+        "imageIPFS": "QmfZVBd3u6d9cj1S5NkYGEc3tcuxXuZaB1FpXdKEn29s2x",
+        "Background": "01 mint.png",
+        "Stomach": "5 purple.png",
+        "Back": "2 moss.png",
+        "Eyes": "4 wtf.png",
+        "Mouth": "04 lips.png",
+        "Shell": "19.png"
+    },
+    {
+        "tokenId": 4,
+        "imageIPFS": "QmYt3LXg3QmsFHzMdoVAfD3DuQDqmo1abuEAMt2Ro4ZijR",
+        "Background": "05 darkness.png",
+        "Stomach": "2 green.png",
+        "Back": "1 green.png",
+        "Eyes": "1 regular.png",
+        "Mouth": "04 lips.png",
+        "Shell": "06.png",
+        "Bottom Prop": "Untitled_Artwork 88.png"
+    },
+    {
+        "tokenId": 5,
+        "imageIPFS": "QmUjxghYjWxuiWqFoEsZ99GXwB1QtfqSpRb8YGnkeUZ6q9",
+        "Background": "02 green.png",
+        "Stomach": "3 blue.png",
+        "Back": "4 purple.png",
+        "Eyes": "5 lashes.png",
+        "Mouth": "04 lips.png",
+        "Shell": "16.png",
+        "Top Prop": "Untitled_Artwork 81.png"
+    },
+    {
+        "tokenId": 6,
+        "imageIPFS": "QmepyMqy9HAzgcNmkydmcvCsUkmAp4DZosK1aATiq43mL7",
+        "Background": "01 mint.png",
+        "Stomach": "3 blue.png",
+        "Back": "1 green.png",
+        "Eyes": "1 regular.png",
+        "Mouth": "04 lips.png",
+        "Shell": "26.png",
+        "Top Prop": "Untitled_Artwork 78.png"
+    },
+    {
+        "tokenId": 7,
+        "imageIPFS": "QmUavQFrYZhymee9KkvJ8veMPCT7Fcww1U9WUssmUFJV7n",
+        "Background": "03 purple.png",
+        "Stomach": "1 lime.png",
+        "Back": "4 purple.png",
+        "Eyes": "1 regular.png",
+        "Mouth": "04 lips.png",
+        "Shell": "19.png",
+        "Bottom Prop": "Untitled_Artwork 68.png"
+    },
+    {
+        "tokenId": 8,
+        "imageIPFS": "QmSL18Nx6rENLsKt4Ko7fDTL8Uvx6HkLMu7JrPm8mrvvo7",
+        "Background": "03 purple.png",
+        "Stomach": "1 lime.png",
+        "Back": "1 green.png",
+        "Eyes": "1 regular.png",
+        "Mouth": "06 gummy.png",
+        "Shell": "10.png"
+    },
+    {
+        "tokenId": 9,
+        "imageIPFS": "QmP2wQvZhh2DP4Zpzin7fxXmJUZG8DP381ojjhFmnEJDij",
+        "Background": "02 green.png",
+        "Stomach": "1 lime.png",
+        "Back": "3 red.png",
+        "Eyes": "3 sad.png",
+        "Mouth": "03 sick.png",
+        "Shell": "12.png"
+    },
+    {
+        "tokenId": 10,
+        "imageIPFS": "QmaM6is86MjodMwqBhchwM8cZpaR2ZviTXK3pxx5B8oWwx",
+        "Background": "03 purple.png",
+        "Stomach": "1 lime.png",
+        "Back": "2 moss.png",
+        "Eyes": "4 wtf.png",
+        "Mouth": "02 smile.png",
+        "Shell": "15.png",
+        "Top Prop": "Untitled_Artwork 70.png",
+        "Middle Prop": "Untitled_Artwork 74.png"
+    },
+    {
+        "tokenId": 11,
+        "imageIPFS": "QmZafYw5AjmRGemxkk9Jwn6LYxhr9HSrqX5xo9zjczhV3Q",
+        "Background": "06 gold.png",
+        "Stomach": "3 blue.png",
+        "Back": "2 moss.png",
+        "Eyes": "6 tired.png",
+        "Mouth": "02 smile.png",
+        "Shell": "15.png"
+    },
+    {
+        "tokenId": 12,
+        "imageIPFS": "QmWsphnP1HvbapZb3GpMe381ttEm2NX8QKNkVhjemjbFWV",
+        "Background": "04 pink.png",
+        "Stomach": "2 green.png",
+        "Back": "2 moss.png",
+        "Eyes": "9 good time.png",
+        "Mouth": "03 sick.png",
+        "Shell": "12.png"
+    },
+    {
+        "tokenId": 13,
+        "imageIPFS": "QmU6jSjuJRMxABSHUdQ73KsrBf64S3wp2XSdRcb3mM3oLz",
+        "Background": "08 wavy green.png",
+        "Stomach": "3 blue.png",
+        "Back": "5 mint.png",
+        "Eyes": "5 lashes.png",
+        "Mouth": "05 uhhh.png",
+        "Shell": "17.png"
+    },
+    {
+        "tokenId": 14,
+        "imageIPFS": "QmYPWP467Z2BgmgFxf4ihcMsk3TuttX8mmf9HH3L4mYJiF",
+        "Background": "05 darkness.png",
+        "Stomach": "2 green.png",
+        "Back": "1 green.png",
+        "Eyes": "5 lashes.png",
+        "Mouth": "02 smile.png",
+        "Shell": "02.png"
+    }
+]

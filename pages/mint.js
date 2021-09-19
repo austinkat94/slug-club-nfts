@@ -117,16 +117,16 @@ export default function Mint() {
         <meta property="og:title" content="The Slug Club" key="ogtitle" />
         <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://boringbananas.co/" key="ogurl"/>
-        <meta property="og:image" content="https://boringbananas.co/images/Hola.gif" key="ogimage"/>
-        <meta property="og:site_name" content="https://boringbananas.co/" key="ogsitename" />
+        <meta property="og:url" content="https://slugclubnft.com/" key="ogurl"/>
+        <meta property="og:image" content="https://slugclubnft.com/images/slugclub.png" key="ogimage"/>
+        <meta property="og:site_name" content="https://slugclubnft.com/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
         <meta property="twitter:domain" content="SlugclubNFT" key="twdomain" />
         <meta property="twitter:url" content="https://twitter.com/SlugclubNFT" key="twurl" />
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
         <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
-        <meta name="twitter:image" content="https://boringbananas.co/images/slugclub.png" key="twimage" />
+        <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
       </Head>
 
 
@@ -137,7 +137,7 @@ export default function Mint() {
               <a href="/#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
               <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">Mint!</a>
               <a href="/#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
-              <a href="https://twitter.com/SlugclubNFT" className="text-4xl  hover:text-gray-500 m-6 text-green-700">TWITTER</a>
+              <a href="https://twitter.com/SlugclubNFT" className="text-4xl  hover:text-gray-500 m-6 text-green-700">Twitter</a>
             </nav>
              
           </div>
@@ -155,10 +155,10 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL SLUGGIES MINTED:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
+                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
-                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">GIMME</span>
+                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
                   
                   <input 
                                       type="number" 
@@ -170,12 +170,12 @@ export default function Mint() {
                                       className=" pl-4 text-4xl Poppitandfinchsans inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">SLUGGIES!</span>
+                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Sluggies!</span>
     
                 </div>
                 {saleIsActive ? 
-                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">MINT {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
-                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-black hover:text-green-400 p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
+                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-black hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
                 

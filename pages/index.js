@@ -48,13 +48,13 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">Here at The Slug Club, we specialize in the world's finest digital slugs.<br /><br />We are a crew of 3, bringing you the most Outrageous and Hilarious slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
-                    <span className="text-black black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>
+                    <span className="text-black black-2xl"><strong>Total Supply: 5500</strong> Sluggies.<br/><strong>Price: 0.025 ETH </strong>each.</span></p>
                   </div>
                   <img src="images/Traits4.gif" alt="" width="400px" className="feature-image"/>
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">GO TO MINTING PAGE!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Go To Minting Page!</a>
                 
                 
             </div> 

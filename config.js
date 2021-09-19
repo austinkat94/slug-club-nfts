@@ -3,7 +3,7 @@
 export const INFURA_ADDRESS = "https://rinkeby.infura.io/v3/9e8464fa68004511ad27565fcc24ecb7"
 
 
-export const ADDRESS = "0xf503066Ed6556FEe49b1d8035B052BE4a538DE6d"
+export const ADDRESS = "0x96EEbaD8921BE0E9f34f01d1eB23fd96451BA1f6"
 
 export const ABI = [
 	{
@@ -164,19 +164,6 @@ export const ABI = [
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "SLUG_PROVENANCE",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
 			}
 		],
 		"stateMutability": "view",
@@ -507,19 +494,6 @@ export const ABI = [
 			}
 		],
 		"name": "setBaseURI",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "provenanceHash",
-				"type": "string"
-			}
-		],
-		"name": "setProvenanceHash",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"

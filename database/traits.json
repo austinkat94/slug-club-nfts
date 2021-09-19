@@ -20,7 +20,10 @@
         "Back": "1 green.png",
         "Eyes": "6 tired.png",
         "Mouth": "03 sick.png",
-        "Shell": "08.png"
+        "Shell": "08.png",
+        "Top Prop": ,
+        "Middle Prop": ,
+        "Bottom Prop":
     },
     {
         "tokenId": 2,
@@ -31,7 +34,9 @@
         "Eyes": "1 regular.png",
         "Mouth": "06 gummy.png",
         "Shell": "17.png",
-        "Top Prop": "Untitled_Artwork 71.png"
+        "Top Prop": "Untitled_Artwork 71.png",
+        "Middle Prop": ,
+        "Bottom Prop":
     },
     {
         "tokenId": 3,
@@ -41,7 +46,10 @@
         "Back": "2 moss.png",
         "Eyes": "4 wtf.png",
         "Mouth": "04 lips.png",
-        "Shell": "19.png"
+        "Shell": "19.png",
+        "Top Prop": ,
+        "Middle Prop": ,
+        "Bottom Prop":
     },
     {
         "tokenId": 4,

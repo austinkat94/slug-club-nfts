@@ -61,7 +61,7 @@ export default function Home() {
             </div>
                 
                 <div id="gallery" className="   mx-6 py-6">
-                    <h2 className="text-green-700 text-7xl text-center">SIGNATURE SLUGGIES</h2>
+                    <h2 className="text-green-700 text-7xl text-center">Signature Sluggies</h2>
                   <div className="flex flex-wrap  items-center mx-6   py-6 ">
                     <div className="md:w-1/2">
                       <div className=" border-blue-300 p-2"><img src="images/gallery1.jpeg" alt="" width="600px" className="feature-image"/></div>
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
               
               <div id="team" className="mx-12 my-16 ">
-                <h2 className="text-7xl text-center text-green-700 my-4">SLUG CLUB TEAM</h2>
+                <h2 className="text-7xl text-center text-green-700 my-4">Slug Club Team</h2>
                 <div className="flex justify-around flex-wrap">
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
                     <div className="cards-image-mask"><img src="/images/Vee.png" width="360px" alt="" className="cards-image" /></div>

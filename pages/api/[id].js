@@ -357,6 +357,40 @@ const slugApi = async(req, res) => {
             }
         ]
       }   
+    } else {
+        metadata = {
+        "name": tokenName,
+        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "tokenId" : parseInt(query),
+        "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
+        "external_url":"https://www.boringbananas.co",
+        "attributes": [          
+            {
+              "trait_type": "Background",
+              "value": trait["Background"]
+            },
+            {
+              "trait_type": "Stomach",
+              "value": trait["Stomach"]
+            },
+            {
+              "trait_type": "Back",
+              "value": trait["Back"]
+            },
+            {
+              "trait_type": "Eyes",
+              "value": trait["Eyes"]
+            },
+            {
+              "trait_type": "Mouth",
+              "value": trait["Mouth"]
+            },
+            {
+              "trait_type": "Shell",
+              "value": trait["Shell"]
+            }
+        ]
+      }   
     }
     
     res.statusCode = 200

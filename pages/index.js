@@ -6,21 +6,21 @@ export default function Home() {
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>The Slug Club</title>
-        <link rel="icon" href="/images/favicon.jpg" />
+        <link rel="icon" href="/images/slugclub.png" />
 
         <meta property="og:title" content="The Slug Club." key="ogtitle" />
         <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://boringbananas.co/" key="ogurl"/>
-        <meta property="og:image" content="https://boringbananas.co/images/Hola.gif" key="ogimage"/>
-        <meta property="og:site_name" content="https://boringbananas.co/" key="ogsitename" />
+        <meta property="og:url" content="https://slugclubnft.com/" key="ogurl"/>
+        <meta property="og:image" content="https://slugclubnft.com/images/slugclub.png" key="ogimage"/>
+        <meta property="og:site_name" content="https://slugclubnft.com/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
         <meta property="twitter:domain" content="SlugclubNFT" key="twdomain" />
         <meta property="twitter:url" content="https://twitter.com/SlugclubNFT" key="twurl" />
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
         <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
-        <meta name="twitter:image" content="https://boringbananas.co/images/slugclub.png" key="twimage" />
+        <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
       </Head>
 
 
@@ -29,9 +29,9 @@ export default function Home() {
             <a href="/" className=""><img src="images/slugclub.png" width="108" alt="" className="logo-image" /></a>
             <nav className="flex flex-wrap flex-row justify-around">
               <a href="#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
-              <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">MINT!</a>
+              <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">Mint!</a>
               <a href="#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
-              <a href="https://twitter.com/SlugclubNFT" className="text-4xl  hover:text-gray-500 m-6 text-green-700">TWITTER</a>
+              <a href="https://twitter.com/SlugclubNFT" className="text-4xl  hover:text-gray-500 m-6 text-green-700">Twitter</a>
             </nav>
              
           </div>
@@ -44,8 +44,8 @@ export default function Home() {
           <div className="mt-6 border-b-2 py-6">
             <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
                   <div className="lg:w-1/2 w-3/4">
-                    <h1 className="text-7xl text-black Poppitandfinchsans">EVERYONE, meet <br/><span className="text-green-700">sluggies</span></h1>
-                    <p className="text-2xl text-black my-6">Here at <span className="text-5xl Poppitandfinchsans">The</span> <span className="text-green-700 Poppitandfinchsans text-5xl">Slug</span> <span className="text-5xl Poppitandfinchsans">Club</span>, we specialize in the world's <span className="text-span-2 Poppitandfinchsans font-bold">finest digital slugs</span>.<br />‍<br />We are a crew of 3, bringing you the most <br/>‍<span className="text-green-700 Poppitandfinchsans text-5xl">Outrageous </span><span className="text-5xl Poppitandfinchsans">and</span><span className="text-green-700 Poppitandfinchsans text-5xl "> Hilarious</span> <br/>slugs out there.
+                    <h1 className="text-7xl text-black Poppitandfinchsans">Everyone, meet <br/><span className="text-green-700">sluggies</span></h1>
+                    <p className="text-2xl text-black my-6">Here at The Slug Club, we specialize in the world's finest digital slugs.<br /><br />We are a crew of 3, bringing you the most Outrageous and Hilarious slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
                     <span className="text-black black-2xl"><strong>TOTAL SUPPLY: 5500</strong> Sluggies.<br/><strong>PRICE: 0.025 ETH </strong>each.</span></p>

@@ -81,15 +81,15 @@ export default function Home() {
                 <h2 className="text-7xl text-center text-green-700 my-4">Slug Club Team</h2>
                 <div className="flex justify-around flex-wrap">
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
-                    <div className="cards-image-mask"><img src="/images/KAT.jpg" width="360px" alt="" className="cards-image" /></div>
+                    <div className="cards-image-mask"><img src="/images/kat.png" width="360px" alt="" className="cards-image" /></div>
                     <h3 className="my-4 text-center text-5xl text-center text-green-700">KAT</h3>
                   </div>
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
-                    <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
+                    <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
                     <h3 className="my-4 text-center text-5xl text-center text-green-700">BEE</h3>
                 </div>
                 <div className="flex flex-col  my-6" style={{width:"360px"}}>
-                    <div className="cards-image-mask"><img src="/images/MJ.png" width="360px" alt="" className="cards-image" /></div>
+                    <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
                     <h3 className="my-4 text-center text-5xl text-center text-green-700">RIA</h3>
                 </div>
               </div>   

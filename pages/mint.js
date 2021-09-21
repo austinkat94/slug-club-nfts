@@ -112,7 +112,7 @@ export default function Mint() {
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>The Slug Club</title>
-        <link rel="icon" href="/images/slugclup.png" />
+        <link rel="icon" href="/images/slugclub.png" />
 
         <meta property="og:title" content="The Slug Club" key="ogtitle" />
         <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />

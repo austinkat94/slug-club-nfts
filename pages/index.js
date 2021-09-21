@@ -48,7 +48,7 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">Here at The Slug Club, we specialize in the world's finest digital slugs.<br /><br />We are a crew of 3, bringing you the most Outrageous and Hilarious slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
-                    <span className="text-black black-2xl"><strong>Total Supply: 5500</strong> Sluggies.<br/><strong>Price: 0.025 ETH </strong>each.</span></p>
+                    <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
                   </div>
                   <img src="images/Traits4.gif" alt="" width="400px" className="feature-image"/>
             </div>

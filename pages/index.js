@@ -49,6 +49,7 @@ export default function Home() {
                     </p>
                     <p className="text-2xl text-black my-6">
                     <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
+                    <iframe src="https://free.timeanddate.com/countdown/i7vcex5b/n107/cf11/cm0/cu4/ct0/cs1/ca2/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs100/szw448/szh189/iso2021-06-29T21:00:00" allowtransparency="true" frameBorder="0" width="425" height="25"></iframe>
                   </div>
                   <img src="images/Traits4.gif" alt="" width="400px" className="feature-image"/>
             </div>

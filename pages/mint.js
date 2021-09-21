@@ -112,7 +112,7 @@ export default function Mint() {
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>The Slug Club</title>
-        <link rel="icon" href="/images/favicon.jpg" />
+        <link rel="icon" href="/images/slugclup.png" />
 
         <meta property="og:title" content="The Slug Club" key="ogtitle" />
         <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />
@@ -158,7 +158,7 @@ export default function Mint() {
                 <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
-                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
+                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
                   
                   <input 
                                       type="number" 

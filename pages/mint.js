@@ -158,7 +158,7 @@ export default function Mint() {
                 <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
-                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
+                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
                   
                   <input 
                                       type="number" 
@@ -175,7 +175,7 @@ export default function Mint() {
                 </div>
                 {saleIsActive ? 
                 <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
-                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-black hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
+                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
                 

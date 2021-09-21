@@ -66,14 +66,14 @@ export default function Home() {
                     <h2 className="text-green-700 text-7xl text-center">Signature Sluggies</h2>
                   <div className="flex flex-wrap  items-center mx-6   py-6 ">
                     <div className="md:w-1/2">
-                      <div className=" border-blue-300 p-2"><img src="images/gallery1.jpeg" alt="" width="600px" className="feature-image"/></div>
+                      <div className=" border-blue-300 p-2"><img src="images/05 Dawn Of The Slugs.jpg" alt="" width="600px" className="feature-image"/></div>
 
                     </div>
                     <div className="md:w-1/2 flex flex-wrap">
-                      <div className=" p-2 w-1/2"><img src="images/gallery2.jpeg" alt="" width="400px" className="feature-image"/></div>
-                      <div className=" p-2 w-1/2"><img src="images/gallery3.jpeg" alt="" width="400px" className="feature-image"/></div>
-                      <div className=" p-2 w-1/2"><img src="images/gallery4.jpeg" alt="" width="400px" className="feature-image"/></div>
-                      <div className=" p-2 w-1/2"><img src="images/gallery5.jpeg" alt="" width="400px" className="feature-image"/></div>
+                      <div className=" p-2 w-1/2"><img src="images/04 Slug Of Darkness.jpg" alt="" width="400px" className="feature-image"/></div>
+                      <div className=" p-2 w-1/2"><img src="images/03 Jurassic Slug.jpg" alt="" width="400px" className="feature-image"/></div>
+                      <div className=" p-2 w-1/2"><img src="images/06 Sluggy The Elf.jpg" alt="" width="400px" className="feature-image"/></div>
+                      <div className=" p-2 w-1/2"><img src="images/08 Im Shiney.jpg" alt="" width="400px" className="feature-image"/></div>
 
                     </div>
                   </div>

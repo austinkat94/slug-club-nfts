@@ -50,7 +50,7 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 25 September 2021. Midnight EST. <br />
                     <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
-                    <iframe src="https://free.timeanddate.com/countdown/i7zq9w6k/n5576/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Sale/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2021-09-25T00:00:00" allowtransparency="true" frameborder="0" width="147" height="49"></iframe>                  </div>
+                    <iframe src="https://free.timeanddate.com/countdown/i7zqaj1u/n5576/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2021-09-25T00:00:00" allowtransparency="true" frameborder="0" width="182" height="49"></iframe>
                   <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
             </div>
             <div className="flex flex-col items-center">

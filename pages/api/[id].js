@@ -4,6 +4,10 @@ import Web3 from "web3";
 // import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
 import traits from "../../database/traits.json";
 
+
+const traits = JSON.parse("ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px")
+console.log(traits)
+
 const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {

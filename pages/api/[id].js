@@ -8,11 +8,11 @@ const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
     
-    const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
+  const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
 
-    for await (const buf of ipfs.get(cid)) {
-      console.log(buf)
-    }
+  const trait_json = await ipfs.get(cid)
+  console.log(trait_json)
+   
 
     // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
   const provider = new Web3.providers.HttpProvider(infuraAddress)

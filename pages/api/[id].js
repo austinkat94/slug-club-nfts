@@ -3,14 +3,17 @@ import Web3 from "web3";
 
 // import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
 import traits from "../../database/traits.json";
-const node = await IPFS.create()
-
-const bufferedContents = await toBuffer(ipfs.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')) // returns a Buffer
-const stringContents = bufferedContents.toString() 
-
-console.log(stringContents)
 
 const infuraAddress = INFURA_ADDRESS
+
+const run = async () => {
+    const node = await IPFS.create()
+
+    const bufferedContents = await toBuffer(ipfs.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')) // returns a Buffer
+    const stringContents = bufferedContents.toString() 
+    console.log(stringContents)
+}
+//return run
 
 const slugApi = async(req, res) => {
 
@@ -18,8 +21,6 @@ const slugApi = async(req, res) => {
   const provider = new Web3.providers.HttpProvider(infuraAddress)
   const web3infura = new Web3(provider);
   const slugContract = new web3infura.eth.Contract(ABI, ADDRESS)
-  
-
 
   // IF YOU ARE USING INSTA REVEAL MODEL, USE THIS TO GET HOW MANY NFTS ARE MINTED
 //   const totalSupply = await bananaContract.methods.totalSupply().call();

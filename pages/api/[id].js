@@ -55,14 +55,14 @@ const slugApi = async(req, res) => {
     
       metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [   
           {
-            "trait_type": "Signature Series",
-            "value": trait["Signature Series"]
+            "trait_type": "Signature Sluggies",
+            "value": trait["Signature Sluggies"]
           }    
         ]
       }
@@ -71,10 +71,10 @@ const slugApi = async(req, res) => {
     // GENERAL Slug METADATA
       metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -120,10 +120,10 @@ const slugApi = async(req, res) => {
     } else if (options_2.every(key => Object.keys(trait).includes(key))) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -162,10 +162,10 @@ const slugApi = async(req, res) => {
     } else if (options_3.every(key => Object.keys(trait).includes(key))) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -204,10 +204,10 @@ const slugApi = async(req, res) => {
     } else if (options_4.every(key => Object.keys(trait).includes(key))) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -246,10 +246,10 @@ const slugApi = async(req, res) => {
     } else if ("Top Prop" in trait) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -284,10 +284,10 @@ const slugApi = async(req, res) => {
     } else if ("Middle Prop" in trait) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -322,10 +322,10 @@ const slugApi = async(req, res) => {
     } else if ("Bottom Prop" in trait) {
          metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",
@@ -360,10 +360,10 @@ const slugApi = async(req, res) => {
     } else {
         metadata = {
         "name": tokenName,
-        "description": "The Slug Club is a brother and sister created endeavor to release slugs into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
-        "external_url":"https://www.boringbananas.co",
+        "external_url":"https://www.slugclubnft.com",
         "attributes": [          
             {
               "trait_type": "Background",

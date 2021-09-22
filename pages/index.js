@@ -76,8 +76,9 @@ export default function Home() {
 
                     </div>
                   </div>
+    */
                 </div>
-                */
+               
               
               <div id="team" className="mx-12 my-16 ">
                 <h2 className="text-7xl text-center text-green-700 my-4">Slug Club Team</h2>
@@ -87,13 +88,13 @@ export default function Home() {
                     <h3 className="my-4 text-center text-5xl text-center text-green-700">KAT</h3>
                   </div>
                   <div className="flex flex-col  my-6" style={{width:"360px"}}>
-                    <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
-                    <h3 className="my-4 text-center text-5xl text-center text-green-700">BEE</h3>
-                </div>
-                <div className="flex flex-col  my-6" style={{width:"360px"}}>
-                    <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
-                    <h3 className="my-4 text-center text-5xl text-center text-green-700">RIA</h3>
-                </div>
+                      <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
+                      <h3 className="my-4 text-center text-5xl text-center text-green-700">BEE</h3>
+                  </div>
+                  <div className="flex flex-col  my-6" style={{width:"360px"}}>
+                      <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
+                      <h3 className="my-4 text-center text-5xl text-center text-green-700">RIA</h3>
+                  </div>
               </div>   
           </div>  
         </div>

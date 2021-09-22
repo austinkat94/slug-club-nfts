@@ -6,16 +6,13 @@ import traits from "../../database/traits.json";
 
 const infuraAddress = INFURA_ADDRESS
 
-const run = async () => {
+const slugApi = async(req, res) => {
+    
     const node = await IPFS.create()
 
     const bufferedContents = await toBuffer(ipfs.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')) // returns a Buffer
     const stringContents = bufferedContents.toString() 
-    return stringContents
-}
-console.log(run)
-
-const slugApi = async(req, res) => {
+    console.log(stringContents)
 
     // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
   const provider = new Web3.providers.HttpProvider(infuraAddress)

@@ -8,9 +8,9 @@ const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
   
-  const res = await fetch('https://ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')
+  const response = await fetch('https://ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')
     
-  console.log(res)
+  console.log(response)
    
 
     // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT

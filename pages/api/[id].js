@@ -13,7 +13,7 @@ const run = async () => {
     const stringContents = bufferedContents.toString() 
     console.log(stringContents)
 }
-//return run
+return run
 
 const slugApi = async(req, res) => {
 

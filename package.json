@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "ipfs": "^0.58.6",
     "ipfs-core": "^0.10.8",
     "next": "latest",
     "react": "latest",

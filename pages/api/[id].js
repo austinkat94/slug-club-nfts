@@ -3,9 +3,15 @@ import Web3 from "web3";
 
 // import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
 // import traits from "../../database/traits.json";
+const node = await IPFS.create()
 
-const response = await fetch("https://ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px");
-const traits = await response.json();
+const stream = node.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')
+
+for await (const chunk of stream) {
+  // chunks of data are returned as a Buffer, convert it back to a string
+  traits += JSON.parse(chunk.toString())
+}
+
 console.log(traits)
 
 const infuraAddress = INFURA_ADDRESS

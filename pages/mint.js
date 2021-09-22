@@ -155,7 +155,7 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 5500</span></span>
+                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
                   <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>

@@ -6,13 +6,14 @@ import traits from "../../database/traits.json";
 
 const infuraAddress = INFURA_ADDRESS
 
+const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
+  
+const node = await IPFS.create()
+
+const trait_json = await node.get(cid)
+
 const slugApi = async(req, res) => {
     
-  const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
-  
-  const node = await IPFS.create()
-
-  const trait_json = await node.get(cid)
   console.log(trait_json)
    
 

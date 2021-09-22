@@ -5,7 +5,7 @@ import Web3 from "web3";
 // import traits from "../../database/traits.json";
 
 const response = await fetch("https://ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px");
-const traits = JSON.parse(response)
+const traits = await response.json();
 console.log(traits)
 
 const infuraAddress = INFURA_ADDRESS

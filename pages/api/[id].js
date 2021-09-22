@@ -11,7 +11,7 @@ const slugApi = async(req, res) => {
   
   const cid = "QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px"
   
-  const ipfs = await IPFS.create()
+  //const ipfs = await IPFS.create()
   
   //const response = await ipfs.get(cid)
     

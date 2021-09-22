@@ -11,9 +11,9 @@ const run = async () => {
 
     const bufferedContents = await toBuffer(ipfs.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')) // returns a Buffer
     const stringContents = bufferedContents.toString() 
-    console.log(stringContents)
+    return stringContents
 }
-return run
+console.log(run)
 
 const slugApi = async(req, res) => {
 

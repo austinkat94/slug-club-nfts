@@ -1,5 +1,6 @@
 import {INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
 import Web3 from "web3";
+import * as IPFS from 'ipfs-core'
 
 // import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
 import traits from "../../database/traits.json";
@@ -8,7 +9,11 @@ const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
   
-  const response = await fetch('https://ipfs.io/ipfs/QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')
+  const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
+  
+  const ipfs = await IPFS.create()
+  
+  const response = await ipfs.get(cid)
     
   console.log(response)
    

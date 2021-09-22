@@ -60,7 +60,7 @@ export default function Home() {
                 
             </div> 
             </div>
-                
+                /*
                 <div id="gallery" className="   mx-6 py-6">
                     <h2 className="text-green-700 text-7xl text-center">Signature Sluggies</h2>
                   <div className="flex flex-wrap  items-center mx-6   py-6 ">
@@ -77,6 +77,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                */
               
               <div id="team" className="mx-12 my-16 ">
                 <h2 className="text-7xl text-center text-green-700 my-4">Slug Club Team</h2>

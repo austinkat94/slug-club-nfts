@@ -8,11 +8,11 @@ const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
     
-    const node = await IPFS.create()
+    const cid = 'QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px'
 
-    const bufferedContents = await toBuffer(ipfs.cat('QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px')) // returns a Buffer
-    const stringContents = bufferedContents.toString() 
-    console.log(stringContents)
+    for await (const buf of ipfs.get(cid)) {
+      console.log(buf)
+    }
 
     // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
   const provider = new Web3.providers.HttpProvider(infuraAddress)

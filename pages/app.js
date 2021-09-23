@@ -1,15 +1,1 @@
-const IPFS = require("ipfs-core")
-
-async function main () {
-
-const node = await IPFS.create()
-
-const cid = "QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px"
-
-const response = await ipfs.get(cid)
-
-console.log(response.text)
-
-}
-
-main()
+xhr.setRequestHeader("Authorization", "Basic " + btoa("1yMVD6UK7R33PIatmGgyVVIqHVB" + ":" + "55f79f348c407b124c4de1e4a0938e7a"));

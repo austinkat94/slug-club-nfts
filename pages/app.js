@@ -1,4 +1,4 @@
-const IPFS = require("ipfs")
+const IPFS = require("ipfs-core")
 
 async function main () {
 

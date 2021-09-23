@@ -48,9 +48,9 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">Here at The Slug Club, we specialize in the world's finest digital slugs.<br /><br />We are a crew of 3, bringing you the most Outrageous and Hilarious slugs out there.
                     </p>
                     <p className="text-2xl text-black my-6">
-                    <strong>LAUNCH DATE:</strong> 25 September 2021. Midnight EST. <br />
+                    <strong>LAUNCH DATE:</strong> 26 September 2021. Midnight EST. <br />
                     <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
-                    <iframe src="https://free.timeanddate.com/countdown/i7zqaj1u/n5576/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2021-09-25T00:00:00" allowtransparency="true" frameborder="0" width="182" height="49"></iframe>
+                    <iframe src="https://free.timeanddate.com/countdown/i7ztso89/n5576/cf11/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Sale/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2021-09-26T00:00:00" allowtransparency="true" frameborder="0" width="292" height="38"></iframe>
                   </div>
                   <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
             </div>

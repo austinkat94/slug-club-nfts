@@ -1,13 +1,5 @@
 import Head from 'next/head'
 
-const IPFS = require('ipfs')
-
-async function main () {
-  const node = await IPFS.create()
-}
-
-main()
-
 export default function Home() {
 
   return (

@@ -9,7 +9,7 @@ const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
   
-  const cid = "QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px"
+  //const cid = "QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px"
   
   //const ipfs = await IPFS.create()
   
@@ -124,8 +124,6 @@ const slugApi = async(req, res) => {
       }
       
       // console.log(metadata)
-      console.log(cid)
-
     }
     
     res.statusCode = 200

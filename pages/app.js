@@ -1,23 +1,10 @@
-const https = require('https')
-
-const projectId = '1qmt...XXX'
-const projectSecret = 'c920...XXX'
-
-const options = {
-  host: 'ipfs.infura.io',
-  port: 5001,
-  path: '/api/v0/pin/cat?arg=QmeGAVddnBSnKc1DLE7DLV9uuTqo5F7QbaveTjr45JUdQn',
-  method: 'POST',
-  auth: "1yMVD6UK7R33PIatmGgyVVIqHVB" + ':' + "55f79f348c407b124c4de1e4a0938e7a"
-}
-
-let req = https.request(options, (res) => {
-  let body = ''
-  res.on('data', function (chunk) {
-    body += chunk
-  })
-  res.on('end', function () {
-    console.log(body)
-  })
+$.ajax({
+    url: 'https://ipfs.infura.io:5001/api/v0/cat?arg=QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px',
+    beforeSend: function(xhr) {
+         xhr.setRequestHeader("Authorization", "1yMVD6UK7R33PIatmGgyVVIqHVB:55f79f348c407b124c4de1e4a0938e7a")
+    }, success: function(data){
+        alert(data);
+        //process the JSON data etc
+        console.log(data)
+    }
 })
-req.end()

@@ -1,4 +1,4 @@
-const IPFS = require('ipfs')
+const IPFS = require('ipfs-core')
 
 const main = async(req, res) => {
     const node = await IPFS.create()

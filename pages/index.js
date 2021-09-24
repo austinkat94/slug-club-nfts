@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/images/slugclub.png" />
 
         <meta property="og:title" content="The Slug Club." key="ogtitle" />
-        <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />
+        <meta property="og:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
         <meta property="og:url" content="https://slugclubnft.com/" key="ogurl"/>
         <meta property="og:image" content="https://slugclubnft.com/images/slugclub.png" key="ogimage"/>
@@ -19,7 +19,7 @@ export default function Home() {
         <meta property="twitter:domain" content="SlugclubNFT" key="twdomain" />
         <meta property="twitter:url" content="https://twitter.com/SlugclubNFT" key="twurl" />
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
-        <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
+        <meta name="twitter:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="twdesc" />
         <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
       </Head>
 
@@ -48,9 +48,8 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!
                     </p>
                     <p className="text-2xl text-black my-6">
-                    <strong>LAUNCH DATE:</strong> 26 September 2021. Midnight EST. <br />
+                    <strong>LAUNCH DATE:</strong> COMING SOON! <br />
                     <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
-                    <iframe src="https://free.timeanddate.com/countdown/i7ztso89/n5576/cf11/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Sale/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2021-09-26T00:00:00" allowtransparency="true" frameborder="0" width="292" height="38"></iframe>
                   </div>
                   <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
             </div>

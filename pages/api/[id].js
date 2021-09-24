@@ -14,7 +14,6 @@ const slugApi = async(req, res) => {
 	const traits = await db
     .collection("NFT_metadata")
     .find({})
-	  .sort({ tokenId: -1 })
 	  .toArray();
   
   // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT

@@ -48,12 +48,8 @@ const slugApi = async(req, res) => {
 
     
     
-    const signatures = [137,883,1327,1781,2528,2763,3833,5568,5858,6585,6812,7154,8412]
+    const signatures = [420, 1345, 2528 , 3833, 5568, 6585, 7154, 9000]
     const trait = traits[parseInt(query)]
-    const options_1 = ['Top Prop', 'Middle Prop', 'Bottom Prop']
-    const options_2 = ['Top Prop', 'Middle Prop']
-    const options_3 = ['Top Prop', 'Bottom Prop']
-    const options_4 = ['Middle Prop', 'Bottom Prop']
     // const trait = traits[ Math.floor(Math.random() * 8888) ] // for testing on rinkeby 
 
     // CHECK OPENSEA METADATA STANDARD DOCUMENTATION https://docs.opensea.io/docs/metadata-standards
@@ -63,7 +59,7 @@ const slugApi = async(req, res) => {
     
       metadata = {
         "name": tokenName,
-        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
         "external_url":"https://www.slugclubnft.com",
@@ -79,7 +75,7 @@ const slugApi = async(req, res) => {
     // GENERAL Slug METADATA
       metadata = {
         "name": tokenName,
-        "description": "We are a crew of 3, bringing gastropods into the crypto space. These slugs all carry various traits and some are one of a kind!",
+        "description": "There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
         "external_url":"https://www.slugclubnft.com",

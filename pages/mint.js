@@ -115,7 +115,7 @@ export default function Mint() {
         <link rel="icon" href="/images/slugclub.png" />
 
         <meta property="og:title" content="The Slug Club" key="ogtitle" />
-        <meta property="og:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="ogdesc" />
+        <meta property="og:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
         <meta property="og:url" content="https://slugclubnft.com/" key="ogurl"/>
         <meta property="og:image" content="https://slugclubnft.com/images/slugclub.png" key="ogimage"/>
@@ -125,7 +125,7 @@ export default function Mint() {
         <meta property="twitter:domain" content="SlugclubNFT" key="twdomain" />
         <meta property="twitter:url" content="https://twitter.com/SlugclubNFT" key="twurl" />
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
-        <meta name="twitter:description" content="The Slug Club is brought to you by a brother and sister out of the US. We create sluggies, crypto creatures that worm their way through the crypto space." key="twdesc" />
+        <meta name="twitter:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="twdesc" />
         <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
       </Head>
 

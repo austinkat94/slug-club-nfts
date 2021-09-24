@@ -1,24 +1,23 @@
 import {INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
 import Web3 from "web3";
-const IPFS = require('ipfs')
+import { connectToDatabase } from "../../util/mongodb";
+
 
 // import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
-import traits from "../../database/traits.json";
+// import traits from "../../database/traits.json";
 
 const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
-  
-  //const cid = "QmWfY26GE7exeyfVm83Ep6jpcHSqC9utb2Sj3UUUQYT3px"
-  
-  //const ipfs = await IPFS.create()
-  
-  //const response = await ipfs.get(cid)
-    
-  //console.log(response.text)
-   
 
-    // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
+  const { db } = await connectToDatabase();	
+	const traits = await db
+    .collection("NFT_metadata")
+    .find({})
+	  .sort({ metacritic: -1 })
+	  .toArray();
+  
+  // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
   const provider = new Web3.providers.HttpProvider(infuraAddress)
   const web3infura = new Web3(provider);
   const slugContract = new web3infura.eth.Contract(ABI, ADDRESS)
@@ -35,7 +34,7 @@ const slugApi = async(req, res) => {
 
   // IF YOU ARE USING INSTA REVEAL MODEL, UNCOMMENT THIS AND COMMENT THE TWO LINES BELOW
 //   if(parseInt(query) < totalSupply) {
-  const totalSluggies = 5500;
+  const totalSluggies = 10000;
   if(parseInt(query) < totalSluggies) {
 
 

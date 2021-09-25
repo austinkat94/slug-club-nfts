@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
 
-            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Go To Minting Page!</a>
+            <a href="/mint" className="mt-4 text-4xl border-6 bg-green-700  text-white hover:text-green-400 p-2 ">Go To Minting Page!</a>
                 
                 
             </div> 

@@ -155,10 +155,10 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
+                <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
-                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
+                  <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
                   
                   <input 
                                       type="number" 
@@ -167,15 +167,15 @@ export default function Mint() {
                                       value={how_many_slugs}
                                       onChange={ e => set_how_many_slugs(e.target.value) }
                                       name="" 
-                                      className=" pl-4 text-4xl Poppitandfinchsans inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
+                                      className=" pl-4 text-4xl amatic inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex Poppitandfinchsans text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Sluggies!</span>
+                  <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Sluggies!</span>
     
                 </div>
                 {saleIsActive ? 
-                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
-                  : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
+                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                  : <button className="mt-4 amatic text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
                 

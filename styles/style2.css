@@ -19,7 +19,13 @@ font-weight: 300;
 font-style: regular;
 font-display: swap;
 }
-
+@font-face {
+    font-family: 'Amatic';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: regular;
+    font-display: swap;
+    }
 
 #bodyy {
     background-image: url('/images/BG2.jpg');
@@ -27,6 +33,10 @@ font-display: swap;
     background-size: contain;
     background-repeat: repeat;
     background-attachment: fixed;
+}
+
+.amatic {
+    font-family: Amatic, sans-serif;
 }
 
 .montserrat {

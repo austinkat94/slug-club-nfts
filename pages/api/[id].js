@@ -14,6 +14,8 @@ const slugApi = async(req, res) => {
 	  .toArray();
   
   // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
+
+  // comment for mainnet
   const provider = new Web3.providers.HttpProvider(test_infura_address)
 
   // uncomment for mainnet
@@ -31,7 +33,7 @@ const slugApi = async(req, res) => {
 
 
   // IF YOU ARE USING INSTA REVEAL MODEL, UNCOMMENT THIS AND COMMENT THE TWO LINES BELOW
-//   if(parseInt(query) < totalSupply) {
+//  if(parseInt(query) < totalSupply) {
   const totalSluggies = 10000;
   if(parseInt(query) < totalSluggies) {
 
@@ -39,9 +41,6 @@ const slugApi = async(req, res) => {
     // CALL CUSTOM TOKEN NAME IN THE CONTRACT
     const tokenNameCall = await slugContract.methods.slugNames(query).call();
     let tokenName = `#${query}${(tokenNameCall === '') ? "" : ` - ${tokenNameCall}`}`
-
-    // IF YOU ARE NOT USING CUSTOM NAMES, JUST USE THIS
-    // let tokenName= `#${query}`
     
     const signatures = [420, 1345, 2528 , 3833, 5568, 6585, 7154, 9000]
     const trait = traits[parseInt(query)]
@@ -64,7 +63,6 @@ const slugApi = async(req, res) => {
           }    
         ]
       }
-      // console.log(metadata)
     } else {
     // GENERAL Slug METADATA
       metadata = {
@@ -112,22 +110,13 @@ const slugApi = async(req, res) => {
             }
         ]
       }
-      
-      // console.log(metadata)
     }
-    
     res.statusCode = 200
     res.json(metadata)
   } else {
     res.statuscode = 404
     res.json({error: "The slug you requested is out of range"})
-
   }
-
-
-  // this is after the reveal
-
-  
 }
 
 export default slugApi

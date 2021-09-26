@@ -1,8 +1,9 @@
-import {INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
+import {MAIN_INFURA_ADDRESS, TEST_INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
 import Web3 from "web3";
 import { connectToDatabase } from "../../lib/mongodb";
 
-const infuraAddress = INFURA_ADDRESS
+const test_infura_address = TEST_INFURA_ADDRESS
+const main_infura_address= MAIN_INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
 
@@ -13,7 +14,11 @@ const slugApi = async(req, res) => {
 	  .toArray();
   
   // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
-  const provider = new Web3.providers.HttpProvider(infuraAddress)
+  const provider = new Web3.providers.HttpProvider(test_infura_address)
+
+  // uncomment for mainnet
+  // const provider = new Web3.providers.HttpProvider(main_infura_address)
+
   const web3infura = new Web3(provider);
   const slugContract = new web3infura.eth.Contract(ABI, ADDRESS)
 

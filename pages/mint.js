@@ -109,7 +109,7 @@ export default function Mint() {
 
 
   return (
-    <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div id="body" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>The Slug Club</title>
         <link rel="icon" href="/images/slugclub.png" />

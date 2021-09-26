@@ -5,7 +5,7 @@ import { connectToDatabase } from "../../lib/mongodb";
 const test_infura_address = TEST_INFURA_ADDRESS
 const main_infura_address= MAIN_INFURA_ADDRESS
 
-const slugApi = async(req, res) => {
+const slug_api = async(req, res) => {
 
   const { db } = await connectToDatabase();	
 	const traits = await db
@@ -21,8 +21,8 @@ const slugApi = async(req, res) => {
   // uncomment for mainnet
   // const provider = new Web3.providers.HttpProvider(main_infura_address)
 
-  const web3infura = new Web3(provider);
-  const slugContract = new web3infura.eth.Contract(ABI, ADDRESS)
+  const web3_infura = new Web3(provider);
+  const slug_contract = new web3_infura.eth.Contract(ABI, ADDRESS)
 
   // IF YOU ARE USING INSTA REVEAL MODEL, USE THIS TO GET HOW MANY NFTS ARE MINTED
 //   const totalSupply = await bananaContract.methods.totalSupply().call();
@@ -34,13 +34,13 @@ const slugApi = async(req, res) => {
 
   // IF YOU ARE USING INSTA REVEAL MODEL, UNCOMMENT THIS AND COMMENT THE TWO LINES BELOW
 //  if(parseInt(query) < totalSupply) {
-  const totalSluggies = 10000;
-  if(parseInt(query) < totalSluggies) {
+  const total_sluggies = 10000;
+  if(parseInt(query) < total_sluggies) {
 
 
     // CALL CUSTOM TOKEN NAME IN THE CONTRACT
-    const tokenNameCall = await slugContract.methods.slugNames(query).call();
-    let tokenName = `#${query}${(tokenNameCall === '') ? "" : ` - ${tokenNameCall}`}`
+    const token_name_call = await slug_contract.methods.slugNames(query).call();
+    let token_name = `#${query}${(token_name_call === '') ? "" : ` - ${token_name_call}`}`
     
     const signatures = [420, 1345, 2528 , 3833, 5568, 6585, 7154, 9000]
     const trait = traits[parseInt(query)]
@@ -51,7 +51,7 @@ const slugApi = async(req, res) => {
     if ( signatures.includes( parseInt( query ) ) ) {
     
       metadata = {
-        "name": tokenName,
+        "name": token_name,
         "description": "There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
@@ -66,7 +66,7 @@ const slugApi = async(req, res) => {
     } else {
     // GENERAL Slug METADATA
       metadata = {
-        "name": tokenName,
+        "name": token_name,
         "description": "There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!",
         "tokenId" : parseInt(query),
         "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
@@ -119,4 +119,4 @@ const slugApi = async(req, res) => {
   }
 }
 
-export default slugApi
+export default slug_api

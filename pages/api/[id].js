@@ -25,7 +25,7 @@ const slug_api = async(req, res) => {
   const slug_contract = new web3_infura.eth.Contract(ABI, ADDRESS)
 
   // IF YOU ARE USING INSTA REVEAL MODEL, USE THIS TO GET HOW MANY NFTS ARE MINTED
-//   const totalSupply = await bananaContract.methods.totalSupply().call();
+//   const totalSupply = await slug_contract.methods.totalSupply().call();
 //   console.log(totalSupply)
 
 // THE ID YOU ASKED IN THE URL

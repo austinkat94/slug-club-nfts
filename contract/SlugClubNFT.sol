@@ -292,7 +292,7 @@ abstract contract ERC165 is IERC165 {
      */
     mapping(bytes4 => bool) private _supportedInterfaces;
 
-    constructor () internal {
+    constructor () {
         // Derived contracts need only register support for their own interfaces,
         // we register support for ERC165 itself here
         _registerInterface(_INTERFACE_ID_ERC165);
@@ -1422,7 +1422,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable 
     /**
      * @dev Initializes the contract by setting a `name` and a `symbol` to the token collection.
      */
-    constructor (string memory name_, string memory symbol_) public {
+    constructor (string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
 
@@ -1835,7 +1835,7 @@ abstract contract Ownable is Context {
     /**
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
-    constructor () internal {
+    constructor () {
         address msgSender = _msgSender();
         _owner = msgSender;
         emit OwnershipTransferred(address(0), msgSender);
@@ -1879,29 +1879,6 @@ abstract contract Ownable is Context {
     }
 }
 
-
-// Following the recent worldwide pandemic, emerging reports suggest that several banana species have begun exhibiting strange characteristics. Our research team located across the globe has commenced efforts to study and document these unusual phenomena.
-
-// Concerned about parties trying to suppress our research, the team has opted to store our findings on the blockchain to prevent interference. Although this is a costly endeavour, our mission has never been clearer.
-
-// The fate of the world's bananas depends on it.
-
-// from our website (https://boringbananas.co)
-
-// BoringBananasCo is a community-centered enterprise focussed on preserving our research about the emerging reports that several banana species have begun exhibiting strange characteristics following the recent worldwide pandemic. 
-// Our research team located across the globe has commenced efforts to study and document these unusual phenomena. 
-// Concerned about parties trying to suppress our research, the team has opted to store our findings on the blockchain to prevent interference. 
-// Although this is a costly endeavour, our mission has never been clearer. 
-// The fate of the world's bananas depends on it.
-
-// BANANA RESEARCH TEAM:
-
-// VEE - @thedigitalvee
-// MJDATA - @ChampagneMan
-// MADBOOGIE - @MadBoogieArt
-// JUI - @mz09art
-// BERK - @berkozdemir
-
 pragma solidity >=0.6.0 <0.9.0;
 pragma abicoder v2;
 
@@ -1909,48 +1886,66 @@ contract TheSlugClub is ERC721, Ownable {
     
     using SafeMath for uint256;
 
-    string public SLUG_PROVENANCE = ""; // IPFS URL WILL BE ADDED WHEN BANANAS ARE ALL SOLD OUT
+    string public LICENSE_TEXT = ""; 
     
-    string public LICENSE_TEXT = ""; // IT IS WHAT IT SAYS
-    
-    bool licenseLocked = false; // TEAM CAN'T EDIT THE LICENSE AFTER THIS GETS TRUE
+    bool licenseLocked = false; // CAN'T EDIT THE LICENSE AFTER THIS GETS TRUE
 
-    uint256 public constant slugPrice = 25000000000000000; // 0.025 ETH
+    uint256 public constant slugPrice = 40000000000000000; // 0.04 ETH
 
-    uint public constant maxSlugPurchase = 20;
+    uint public constant maxSlugPurchase = 10;
 
-    uint256 public constant MAX_SLUGS = 5500;
+    uint256 public constant MAX_SLUGS = 10000;
 
     bool public saleIsActive = false;
     
     mapping(uint => string) public slugNames;
     
-    // Reserve 125 Bananas for team - Giveaways/Prizes etc
-    uint public slugReserve = 125;
+    // Reserve 25 Bananas for team - Giveaways/Prizes etc
+    uint public slugReserve = 25;
     
     event slugNameChange(address _by, uint _tokenId, string _name);
     
     event licenseisLocked(string _licenseText);
 
-    constructor() ERC721("The Slug Club", "TSC") { }
+    constructor() ERC721("The Slug Club", "TSC") { 
+    }
     
     function withdraw() public onlyOwner {
         uint balance = address(this).balance;
         payable(msg.sender).transfer(balance);
     }
     
+    function uint2str(uint _i) internal pure returns (string memory _uintAsString) {
+        if (_i == 0) {
+            return "0";
+        }
+        uint j = _i;
+        uint len;
+        while (j != 0) {
+            len++;
+            j /= 10;
+        }
+        bytes memory bstr = new bytes(len);
+        uint k = len;
+        while (_i != 0) {
+            k = k-1;
+            uint8 temp = (48 + uint8(_i - _i / 10 * 10));
+            bytes1 b1 = bytes1(temp);
+            bstr[k] = b1;
+            _i /= 10;
+        }
+        return string(bstr);
+    }
+
     function reserveSlugs(address _to, uint256 _reserveAmount) public onlyOwner {        
         uint supply = totalSupply();
         require(_reserveAmount > 0 && _reserveAmount <= slugReserve, "Not enough reserve left for team");
         for (uint i = 0; i < _reserveAmount; i++) {
-            _safeMint(_to, supply + i);
+            uint index = supply + i;
+            _safeMint(_to, index);
+            _setTokenURI(index, uint2str(index));
         }
         slugReserve = slugReserve.sub(_reserveAmount);
-    }
-
-
-    function setProvenanceHash(string memory provenanceHash) public onlyOwner {
-        SLUG_PROVENANCE = provenanceHash;
     }
 
     function setBaseURI(string memory baseURI) public onlyOwner {
@@ -1996,17 +1991,17 @@ contract TheSlugClub is ERC721, Ownable {
         LICENSE_TEXT = _license;
     }
     
-    
     function mintSluggies(uint numberOfTokens) public payable {
         require(saleIsActive, "Sale must be active to mint Sluggies");
         require(numberOfTokens > 0 && numberOfTokens <= maxSlugPurchase, "Can only mint 20 tokens at a time");
         require(totalSupply().add(numberOfTokens) <= MAX_SLUGS, "Purchase would exceed max supply of Sluggies");
         require(msg.value >= slugPrice.mul(numberOfTokens), "Ether value sent is not correct");
-        
         for(uint i = 0; i < numberOfTokens; i++) {
             uint mintIndex = totalSupply();
             if (totalSupply() < MAX_SLUGS) {
+                
                 _safeMint(msg.sender, mintIndex);
+                _setTokenURI(mintIndex, uint2str(mintIndex));
             }
         }
 

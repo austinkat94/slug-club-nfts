@@ -49,7 +49,7 @@ export default function Home() {
                     </p>
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> COMING SOON! <br />
-                    <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span></p>
+                    <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span><br/><strong>Purchase Limit: 10 Sluggies </strong></p>
                   </div>
                   <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
             </div>

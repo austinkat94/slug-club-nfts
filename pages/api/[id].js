@@ -2,10 +2,6 @@ import {INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
 import Web3 from "web3";
 import { connectToDatabase } from "../../lib/mongodb";
 
-
-// import the json containing all metadata. not recommended, try to fetch the database from a middleware if possible, I use MONGODB for example
-// import traits from "../../database/traits.json";
-
 const infuraAddress = INFURA_ADDRESS
 
 const slugApi = async(req, res) => {
@@ -24,8 +20,6 @@ const slugApi = async(req, res) => {
   // IF YOU ARE USING INSTA REVEAL MODEL, USE THIS TO GET HOW MANY NFTS ARE MINTED
 //   const totalSupply = await bananaContract.methods.totalSupply().call();
 //   console.log(totalSupply)
-  
-
 
 // THE ID YOU ASKED IN THE URL
   const query = req.query.id;
@@ -43,12 +37,9 @@ const slugApi = async(req, res) => {
 
     // IF YOU ARE NOT USING CUSTOM NAMES, JUST USE THIS
     // let tokenName= `#${query}`
-
-    
     
     const signatures = [420, 1345, 2528 , 3833, 5568, 6585, 7154, 9000]
     const trait = traits[parseInt(query)]
-    // const trait = traits[ Math.floor(Math.random() * 8888) ] // for testing on rinkeby 
 
     // CHECK OPENSEA METADATA STANDARD DOCUMENTATION https://docs.opensea.io/docs/metadata-standards
     let metadata = {}

@@ -14,6 +14,4 @@ IPFS Command line reference: https://docs.ipfs.io/reference/cli/#ipfs-add
 
 Pinata Cloud: https://pinata.cloud
 
-IPFS to Arweave: https://ipfs2arweave.com/
-
 Opensea Metadata Standard: https://docs.opensea.io/docs/metadata-standards

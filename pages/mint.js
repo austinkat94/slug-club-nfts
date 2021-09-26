@@ -137,7 +137,7 @@ export default function Mint() {
               <a href="/#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
               <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">Mint!</a>
               <a href="/#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
-              <a href="https://twitter.com/SlugclubNFT" className="text-4xl  hover:text-gray-500 m-6 text-green-700">Twitter</a>
+              <a href="https://linktr.ee/slugclubnft" className="text-4xl  hover:text-gray-500 m-6 text-green-700">Social Media</a>
             </nav>
              
           </div>

@@ -4,7 +4,7 @@ export const TEST_INFURA_ADDRESS = "https://rinkeby.infura.io/v3/9e8464fa6800451
 export const MAIN_INFURA_ADDRESS = "https://mainnet.infura.io/v3/9e8464fa68004511ad27565fcc24ecb7"
 
 
-export const ADDRESS = "0x824BBb88Dbbd1e81c72aAfe0eb646cCc8371cD0A"
+export const ADDRESS = "0x8635766f5d29F48AcD0d62586e1EbF4AD9c5a874"
 
 export const ABI = [
 	{

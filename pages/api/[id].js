@@ -16,10 +16,10 @@ const slug_api = async(req, res) => {
   // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
 
   // comment for mainnet
-  const provider = new Web3.providers.HttpProvider(test_infura_address)
+  //const provider = new Web3.providers.HttpProvider(test_infura_address)
 
   // uncomment for mainnet
-  // const provider = new Web3.providers.HttpProvider(main_infura_address)
+  const provider = new Web3.providers.HttpProvider(main_infura_address)
 
   const web3_infura = new Web3(provider);
   const slug_contract = new web3_infura.eth.Contract(ABI, ADDRESS)

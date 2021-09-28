@@ -1,9 +1,9 @@
-import {MAIN_INFURA_ADDRESS, TEST_INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
+import {INFURA_ADDRESS, TEST_INFURA_ADDRESS, ADDRESS, ABI} from "../../config.js"
 import Web3 from "web3";
 import { connectToDatabase } from "../../lib/mongodb";
 
 const test_infura_address = TEST_INFURA_ADDRESS
-const main_infura_address= MAIN_INFURA_ADDRESS
+const main_infura_address= INFURA_ADDRESS
 
 const slug_api = async(req, res) => {
 

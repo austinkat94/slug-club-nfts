@@ -50,7 +50,6 @@ export default function Home() {
                     <p className="text-2xl text-black my-6">
                     <strong>LAUNCH DATE:</strong> 28 September 11:59 PM EST<br />
                     <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span><br/><strong>Purchase Limit: 10 </strong> Sluggies</p>
-                    <iframe src="https://free.timeanddate.com/countdown/i8028awc/n5576/cf11/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Sale/tac000/tptTime%20since%20Sale%20started/tpc000/iso2021-09-28T23:59:00" allowtransparency="true" frameborder="0" width="292" height="38"></iframe>
                   </div>
                   <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
             </div>

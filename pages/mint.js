@@ -156,7 +156,6 @@ export default function Mint() {
             <div className="flex flex-col items-center">
 
                 <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
-                <span className="flex amatic text-sm text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Please use a computer for purchases for best experience</span>
 
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
                   <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
@@ -179,6 +178,8 @@ export default function Mint() {
                   : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
+
+              <p className="text-sm">If using a mobile device follow these steps for purchasing: go into the metamask app, choose the menu options, you'll see an option called browser select that, navigate to our site and purchase.</p>
                 
             </div> 
             </div>

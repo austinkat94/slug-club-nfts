@@ -179,7 +179,7 @@ export default function Mint() {
             
               }
 
-              <p className="text-sm">If using a mobile device follow these steps for purchasing: go into the metamask app, choose the menu options, you'll see an option called browser select that, navigate to our site and purchase.</p>
+              <p className="flex text-base text-black items-center">If using a mobile device follow these steps for purchasing: go into the metamask app, choose the menu options, you'll see an option called browser select that, navigate to our site and purchase.</p>
                 
             </div> 
             </div>

@@ -174,7 +174,7 @@ export default function Mint() {
     
                 </div>
                 {saleIsActive ? 
-                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-900  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
                   : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }

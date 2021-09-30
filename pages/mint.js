@@ -180,7 +180,7 @@ export default function Mint() {
             
               }
 
-              <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = Support Message" className="button amatic text-4xl hover:text-green-400"><i class="fad fa-envelope-open-text fa-lg"></i><br/>Request Support</a>                
+              <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = SupportMessage" className="button amatic text-4xl hover:text-green-400"><i class="fad fa-envelope-open-text fa-lg"></i><br/>Request Support</a>                
             </div> 
             </div>
  

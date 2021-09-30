@@ -127,6 +127,7 @@ export default function Mint() {
         <meta name="twitter:title" content="The Slug Club" key="twtitle" />
         <meta name="twitter:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="twdesc" />
         <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
+        <script src="https://kit.fontawesome.com/5f93ca0689.js" crossorigin="anonymous"></script>
       </Head>
 
 

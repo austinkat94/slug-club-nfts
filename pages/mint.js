@@ -181,7 +181,7 @@ export default function Mint() {
               }
 
               <p className="flex text-base text-black items-center">If using a mobile device follow these steps for purchasing: go into the metamask app, choose the menu options, you'll see an option called browser select that, navigate to our site and purchase.</p>
-              <a href = "mailto:taylormadenft@gmail.com?subject = Sluggie Support&body = Support Message"><i class="fad fa-envelope-open-text fa-lg">Request Support</i></a>
+              <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = Support Message"><i class="fad fa-envelope-open-text fa-lg"></i>Request Support</a>
                 
             </div> 
             </div>

@@ -111,6 +111,14 @@ export default function Mint() {
   return (
     <div id="body" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TKSV63VDR"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7TKSV63VDR');
+        </script>
         <title>The Slug Club</title>
         <link rel="icon" href="/images/slugclub.png" />
 
@@ -128,14 +136,6 @@ export default function Mint() {
         <meta name="twitter:description" content="There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!" key="twdesc" />
         <meta name="twitter:image" content="https://slugclubnft.com/images/slugclub.png" key="twimage" />
         <script src="https://kit.fontawesome.com/5f93ca0689.js" crossorigin="anonymous"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TKSV63VDR"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-7TKSV63VDR');
-        </script>
       </Head>
 
 

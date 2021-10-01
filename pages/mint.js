@@ -111,14 +111,6 @@ export default function Mint() {
   return (
     <div id="body" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TKSV63VDR"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-7TKSV63VDR');
-        </script>
         <title>The Slug Club</title>
         <link rel="icon" href="/images/slugclub.png" />
 

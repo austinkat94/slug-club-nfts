@@ -181,7 +181,7 @@ export default function Mint() {
               }
               <br />
 
-              <span className="flex text-black text-sm">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button won't load purchasing pup-up. Check console log if unsure.</span>
+              <span className="flex text-black text-sm">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button won't load purchasing pop-up. Check console log if unsure.</span>
 
               <br/>
 

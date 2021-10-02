@@ -90,7 +90,7 @@ export default function Home() {
               <div>
                 <h3 className="text-3xl amatic text-center text-green-700 my-4">75% Sold</h3>
                 <ul class="list-disc list-inside pl-4">
-                  <li>Community drawing for a chance at 3 spots to win 3 ETH each</li>
+                  <li>Community drawing for a chance at 3 spots to win 5 ETH each</li>
                   <li>Community drawing for a chance at 20 spots to win a free sluggie</li>
                 </ul>
               </div>

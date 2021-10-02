@@ -131,21 +131,60 @@ export default function Mint() {
       </Head>
 
 
-      <div >
-          <div className="flex items-center justify-between w-full border-b-2	pb-6">
-            <a href="/" className=""><img src="images/slugclub.png" width="108" alt="" className="logo-image" /></a>
-            <nav className="flex flex-wrap flex-row justify-around ">
-              <a href="/#about" className="text-4xl text-black hover:text-gray-500 m-6">About</a>
-              <a href="/mint" className="text-4xl text-black hover:text-gray-500 m-6">Mint!</a>
-              <a href="/#team" className="text-4xl text-black hover:text-gray-500 m-6">Team</a>
-              <a href="https://linktr.ee/slugclubnft" className="text-4xl  hover:text-gray-500 m-6 text-green-700">Social Media</a>
-            </nav>
-             
-          </div>
+      <div>
+        <div>
+          <nav class="bg-white bg-opacity-50 w-full rounded-md">
+            <div class="w-full mx-auto px-2 sm:px-6 lg:px-8">
+              <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex-shrink-0 flex items-center">
+                    <img class="block  h-14 w-16 logo-image" src="/images/slugclub.png" logo-imagealt="slug club"/>
+                  </div>
+                  <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                      <a href="/#about" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium" aria-current="page">About</a>
+
+                      <a href="/mint" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Mint!</a>
+
+                      <a href="/#team" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Team</a>
+
+                      <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Social Media</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sm:hidden" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/#about" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
+
+                <a href="/mint" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Mint!</a>
+
+                <a href="/#team" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+                <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Social Media</a>
+              </div>
+            </div>
+          </nav>
+        </div>
           <div className="flex auth my-8 font-bold  justify-center items-center vw2">
-            {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Connect Wallet with Metamask</button>
+            {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Connect Wallet with Metamask</button>
             :
-            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Wallet Connected: {walletAddress}</button>}
+            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
           </div>
         </div>
 
@@ -175,8 +214,8 @@ export default function Mint() {
     
                 </div>
                 {saleIsActive ? 
-                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
-                  : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
+                <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75 rounded-md text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                  : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75 rounded-md text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
               <br />
@@ -185,10 +224,10 @@ export default function Mint() {
 
               <br/>
 
-              <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = SupportMessage" className="button amatic text-4xl hover:text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15" viewBox="0 0 20 20" fill="currentColor">
-  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-</svg>Request Support</a>                
+              <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = SupportMessage" className="button amatic text-4xl rounded-md hover:text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>Request Support</a>                
             </div> 
             </div>
  

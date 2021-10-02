@@ -78,11 +78,11 @@ export default function Home() {
           <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
             <div className="lg:w-1/2 w-3/4">
               <h1 className="text-7xl text-black amatic">Everyone, meet <br/><span className="text-green-700">sluggies</span></h1>
-              <p className="text-2xl text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! <br /> Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!
+              <p className="text-xl text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! <br /><br/> Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!
               </p>
-              <p className="text-2xl text-black my-6">
+              <p className="text-xl text-black my-6">
               <strong>LAUNCH DATE:</strong> September 28th 11:59 PM EST<br />
-              <span className="text-black black-2xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span><br/><strong>Purchase Limit: 10 </strong> Sluggies</p>
+              <span className="text-black black-xl"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span><br/><strong>Purchase Limit: 10 </strong> Sluggies</p>
             </div>
             <img src="images/sluggies.gif" alt="" width="400px" className="feature-image"/>
           </div>
@@ -97,6 +97,33 @@ export default function Home() {
       <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Roadmap</h2>
         <div id="roadmap" className="flex grid grid-cols-3">
+          <div className="flex flex-wrap w-3/4 items-center justify-self-center col-span-3 xl:col-span-3">
+            <p className="text-xl text-black my-6">
+            Why collect a Sluggie? 
+            <br/>
+            <br/>
+            Well besides how adorably goofy and nerdy they are
+
+            they will contribute to making their community a better place! 
+
+            <br/>
+            <br/>
+
+            Invest in a collection that will invest in their collectors!
+
+            <br/> 
+            <br/>
+
+            From free Sluggie drops to community drawings for ETH,
+
+            along with donations to various charity’s! 
+
+            <br/>
+            <br/>
+
+            Sluggies may be small but they’re looking to make a BIG impact! 
+            </p>
+          </div>
           <div className="col-span-3 xl:col-span-2">
             <img src="/images/Roadmap.png"/>
           </div>

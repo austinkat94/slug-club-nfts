@@ -179,6 +179,11 @@ export default function Mint() {
                   : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
             
               }
+              <br />
+
+              <p className="text-black text-sm">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button will not do anything. Check console log for debugging.</p>
+
+              <br/>
 
               <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = SupportMessage" className="button amatic text-4xl hover:text-green-400"><i class="fad fa-envelope-open-text fa-lg"></i><br/>Request Support</a>                
             </div> 

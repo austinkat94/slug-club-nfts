@@ -76,7 +76,7 @@ export default function Home() {
                 <h3 className="text-3xl amatic text-center text-green-700 my-4">25% Sold</h3>
                 <ul class="list-disc list-inside pl-4">
                   <li>Random member with under 9 or less gets free sluggie</li>
-                  <li>Member drawing for $250 giveaway</li>
+                  <li>Member drawing for a chance at 3 spots to win 2 ETH each</li>
                 </ul>
               </div>
               <div>

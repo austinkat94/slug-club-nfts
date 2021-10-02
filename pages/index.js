@@ -82,7 +82,7 @@ export default function Home() {
               <div>
                 <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Sold</h3>
                 <ul class="list-disc list-inside pl-4">
-                  <li>Donate 10 ETH to <a className="text-underline" href="https://girlswhocode.com/">Girls Who Code</a></li>
+                  <li>Donate 10 ETH to <a className="underline" href="https://girlswhocode.com/">Girls Who Code</a></li>
                 </ul>
               </div>
               <div>

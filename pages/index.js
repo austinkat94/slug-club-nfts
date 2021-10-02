@@ -93,6 +93,7 @@ export default function Home() {
       </div>
 
       <br/>
+      <br/>
 
       <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75 md:w-2/3 w-4/5">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Roadmap</h2>

@@ -50,29 +50,73 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <a href="/mint" className="mt-4 text-4xl border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Go To Minting Page!</a> 
+          <a href="/mint" className="mt-4 text-4xl amatic border-6 bg-green-700 bg-opacity-75  text-white hover:text-green-400 p-2 ">Go To Minting Page!</a> 
         </div> 
       </div>
 
-      <div id="roadmap" className="">
-        <h2 className="text-7xl text-center text-green-700 my-4">Roadmap</h2>
-        <img src="/images/Roadmap.png"/>
+      <br/>
+
+      <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75">
+        <h2 className="text-7xl amatic text-center text-green-700 my-4">Roadmap</h2>
+        <div id="roadmap" className="flex grid grid-cols-3">
+          <div className="col-span-3 xl:col-span-2">
+            <img src="/images/Roadmap.png"/>
+          </div>
+          <div className="col-span-3 xl:col-span-1">
+            <div class="grid grid-rows-5 justify-center place-self-center">
+              <div>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">Launch</h3>
+                <ul class="list-disc list-inside pl-4">
+                  <li className="line-through">Random community giveaway</li>
+                  <li>Social media raffle for a free sluggie</li>
+                  <li>Random buyer gets free sluggie</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">25% Sold</h3>
+                <ul class="list-disc list-inside pl-4">
+                  <li>Random member with under 9 or less gets free sluggie</li>
+                  <li>Member drawing for $250 giveaway</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Sold</h3>
+                <ul class="list-disc list-inside pl-4">
+                  <li>Donate 10 ETH to <a href="https://girlswhocode.com/">Girls Who Code</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">75% Sold</h3>
+                <ul class="list-disc list-inside pl-4">
+                  <li>Community drawing for a chance at 3 spots to win 3 ETH each</li>
+                  <li>Community drawing for a chance at 15 spots to win a free sluggie</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">100% Sold</h3>
+                <ul class="list-disc list-inside pl-4">
+                  <li>Members only area announced</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
               
       <div id="team" className="mx-12 my-16 ">
-        <h2 className="text-7xl text-center text-green-700 my-4">Slug Club Team</h2>
+        <h2 className="text-7xl amatic text-center text-green-700 my-4">Slug Club Team</h2>
         <div className="flex justify-around flex-wrap">
           <div className="flex flex-col  my-6" style={{width:"360px"}}>
             <div className="cards-image-mask"><img src="/images/kat.png" width="360px" alt="" className="cards-image" /></div>
-            <h3 className="my-4 text-center text-5xl text-center text-green-700">KAT</h3>
+            <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">KAT</h3>
           </div>
           <div className="flex flex-col  my-6" style={{width:"360px"}}>
               <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
-              <h3 className="my-4 text-center text-5xl text-center text-green-700">BEE</h3>
+              <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">BEE</h3>
           </div>
           <div className="flex flex-col  my-6" style={{width:"360px"}}>
               <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
-              <h3 className="my-4 text-center text-5xl text-center text-green-700">RIA</h3>
+              <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">RIA</h3>
           </div>
         </div>
       </div> 

@@ -9,7 +9,7 @@ const slug_api = async(req, res) => {
 
   const { db } = await connectToDatabase();	
 	const traits = await db
-    .collection("NFT_metadata")
+    .collection("Slug_metadata")
     .find({})
 	  .toArray();
   

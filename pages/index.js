@@ -105,7 +105,7 @@ export default function Home() {
             <br/>
             Well besides how adorably goofy and nerdy they are
 
-            they will contribute to making their community a better place! 
+            they will contribute to making their community a better place! Our goal is to donate over 50 ETH tokens to the community and foundations!
 
             <br/>
             <br/>
@@ -117,7 +117,7 @@ export default function Home() {
 
             From free Sluggie drops to community drawings for ETH,
 
-            along with donations to various charities! 
+            along with donations to various charities!
 
             <br/>
             <br/>

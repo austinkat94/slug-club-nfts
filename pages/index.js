@@ -98,7 +98,7 @@ export default function Home() {
       <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75 md:w-2/3 w-4/5">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Roadmap</h2>
         <div id="roadmap" className="flex grid grid-cols-3">
-          <div className="flex flex-wrap lg:w-1/2 w-3/4 items-center justify-self-center col-span-3 xl:col-span-3">
+          <div className="w-3/4 items-center justify-self-center col-span-3">
             <p className="text-black text-lg my-6">
             Why collect a Sluggie? 
             <br/>

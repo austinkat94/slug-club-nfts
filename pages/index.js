@@ -81,7 +81,7 @@ export default function Home() {
         <div className="mt-6 border-b-2 py-6">
           <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
             <div className="lg:w-1/2 w-3/4">
-              <h1 className="text-7xl text-black amatic">Everyone, meet <br/><span className="text-green-700">sluggies</span></h1>
+              <h1 className="text-7xl text-black amatic">Welcome to, <br/><span className="text-green-700">The Slug Club</span></h1>
               <p className="text-lg text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! <br /><br/> Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!
               </p>
               <p className="text-lg text-black my-6">

@@ -100,9 +100,11 @@ export default function Mint() {
               })
       }
       catch(e) {
+        var timeElapsed = Date.now();
+        var today = new Date(timeElapsed);
         var div = document.getElementById('error_log');
 
-        div.innerHTML += e.message;
+        div.innerHTML = today.toUTCString() + " - " + e.message;
       }
     } else {
         console.log("Wallet not connected")

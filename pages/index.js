@@ -105,7 +105,12 @@ export default function Home() {
             <br/>
             Well besides how adorably goofy and nerdy they are
 
-            they will contribute to making their community a better place! Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to the community and foundations, making us one of the largest donators from the NFT bunch!
+            they will contribute to making their community a better place! 
+            
+            <br/>
+            <br/>
+            
+            Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to the community and foundations, making us one of the largest donators from the NFT bunch!
 
             <br/>
             <br/>

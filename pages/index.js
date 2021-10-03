@@ -84,7 +84,7 @@ export default function Home() {
               <strong>LAUNCH DATE:</strong> September 28th 11:59 PM EST<br />
               <span className="text-black black-lg"><strong>Total Supply: 10000</strong> Sluggies.<br/><strong>Price: 0.04 ETH </strong>each.</span><br/><strong>Purchase Limit: 10 </strong> Sluggies</p>
             </div>
-            <img src="images/sluggies2.gif" alt="" width="400px" className="feature-image"/>
+            <img src="images/sluggies3.gif" alt="" width="400px" className="feature-image"/>
           </div>
         </div>
         <div className="flex flex-col items-center">

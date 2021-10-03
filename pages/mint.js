@@ -83,21 +83,27 @@ export default function Mint() {
   
   async function mintSluggies(how_many_sluggies) {
     if (slugContract) {
- 
-      const price = Number(slugPrice)  * how_many_sluggies 
 
-      const gasAmount = await slugContract.methods.mintSluggies(how_many_sluggies).estimateGas({from: walletAddress, value: price})
-      console.log("estimated gas",gasAmount)
+      try{
+        const price = Number(slugPrice)  * how_many_sluggies 
 
-      console.log({from: walletAddress, value: price})
+        const gasAmount = await slugContract.methods.mintSluggies(how_many_sluggies).estimateGas({from: walletAddress, value: price})
+        console.log("estimated gas",gasAmount)
 
-      slugContract.methods
-            .mintSluggies(how_many_sluggies)
-            .send({from: walletAddress, value: price, gas: String(gasAmount)})
-            .on('transactionHash', function(hash){
-              console.log("transactionHash", hash)
-            })
-          
+        console.log({from: walletAddress, value: price})
+
+        slugContract.methods
+              .mintSluggies(how_many_sluggies)
+              .send({from: walletAddress, value: price, gas: String(gasAmount)})
+              .on('transactionHash', function(hash){
+                console.log("transactionHash", hash)
+              })
+      }
+      catch(e) {
+        var div = document.getElementById('error_log');
+
+        div.innerHTML += e.message;
+      }
     } else {
         console.log("Wallet not connected")
     }
@@ -223,6 +229,8 @@ export default function Mint() {
             
               }
               <br />
+
+              <div id="error_log" className="md:w-2/3 w-4/5 rounded-md shadow bg-yellow-100 bg-opacity-75"></div>
 
               <span className="flex text-black amatic text-md">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button won't load purchasing pop-up. Check console log if unsure.</span>
 

@@ -9,7 +9,7 @@ const slug_api = async(req, res) => {
 
   const { db } = await connectToDatabase();	
 	const traits = await db
-    .collection("Slug_metadata")
+    .collection("SlugClub_metadata")
     .find({})
 	  .toArray();
   

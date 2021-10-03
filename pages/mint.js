@@ -230,7 +230,7 @@ export default function Mint() {
               }
               <br />
 
-              <div id="error_log" className="md:w-2/3 w-4/5 rounded-md shadow bg-yellow-100 bg-opacity-75"></div>
+              <div id="error_log" className="md:w-2/3 w-4/5 rounded-md shadow bg-yellow-100 bg-opacity-75 text-red-600"></div>
 
               <span className="flex text-black amatic text-md">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button won't load purchasing pop-up. Check console log if unsure.</span>
 

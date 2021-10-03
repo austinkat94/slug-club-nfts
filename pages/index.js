@@ -158,7 +158,7 @@ export default function Home() {
                 <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Sold</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
                   <li>Donate 10 ETH to <a className="underline" href="https://girlswhocode.com/">Girls Who Code</a></li>
-                  <li>Donate 10 ETH to TBA</li>
+                  <li>Donate 10 ETH to <a className="underline" href="https://paulwalkerfoundation.org/pages/about-us">Paul Walker Foundation</a></li>
                   <li>Donate 10 ETH to TBA</li>
                 </ul>
               </div>

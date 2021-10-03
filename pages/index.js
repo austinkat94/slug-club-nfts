@@ -103,9 +103,9 @@ export default function Home() {
             Why collect a Sluggie? 
             <br/>
             <br/>
-            Well besides how adorably goofy and nerdy they are
+            Well besides how adorably goofy and nerdy they are,
 
-            they will contribute to making their community a better place! 
+            they'll contribute to making their community a better place! 
             
             <br/>
             <br/>

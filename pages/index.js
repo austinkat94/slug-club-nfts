@@ -117,7 +117,7 @@ export default function Home() {
 
             From free Sluggie drops to community drawings for ETH,
 
-            along with donations to various charity’s! 
+            along with donations to various charities! 
 
             <br/>
             <br/>

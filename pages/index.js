@@ -143,7 +143,7 @@ export default function Home() {
                 <h3 className="text-3xl amatic text-center text-green-700 my-4">Launch</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
                   <li className="line-through">Random community giveaway</li>
-                  <li>Social media raffle for a free sluggie</li>
+                  <li className="line-through">Social media raffle for a free sluggie</li>
                   <li>Random buyer gets free sluggie</li>
                 </ul>
               </div>

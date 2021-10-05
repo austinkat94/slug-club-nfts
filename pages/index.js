@@ -156,7 +156,7 @@ export default function Home() {
           <div className="col-span-3 xl:col-span-1">
             <div class="grid grid-rows-5 justify-center place-self-center">
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li className="line-through">Random community giveaway</li>
                   <li className="line-through">Social media raffle for a free Sluggie</li>
@@ -164,28 +164,28 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">25% Member ETH & Sluggie Giveaways</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">25% Member ETH & Sluggie Giveaways</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>Member drawing for free Sluggie</li>
                   <li>Member drawing for a chance at 3 spots to win 2 ETH each</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Charity Donations</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">50% Charity Donations</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>Donate 10 ETH to <a className="underline" href="https://girlswhocode.com/">Girls Who Code</a></li>
                   <li>Donate 10 ETH to <a className="underline" href="https://paulwalkerfoundation.org/pages/about-us">Paul Walker Foundation</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">75% Slug Garden NFT for all current members & ETH drawing</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">75% Slug Garden NFT for all current members & ETH drawing</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>Members drawing for a chance at 5 spots to win 5 ETH each</li>
                   <li>Members recieve uniquely generated Slug Garden NFTs</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">100% The Garden is open</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">100% The Garden is open</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>The Garden is opened! We envision an open garden for our Sluggies to roam around and interact with one another, win various prizes and more! <br/>
                    STAY TUNED!

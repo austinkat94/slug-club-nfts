@@ -82,7 +82,7 @@ export default function Home() {
           <div className="flex flex-wrap lg:flex-nowrap justify-around items-center">
             <div className="lg:w-1/2 w-3/4">
               <h1 className="text-7xl text-black amatic">Welcome to, <br/><span className="text-green-700">The Slug Club</span></h1>
-              <p className="text-lg text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! <br /><br/> Our 3 person team has personally cared for these creatures and are looking forward to them going to good homes!
+              <p className="text-lg text-black my-6">There are 40,000 species of gastropods on earth, but here in The Slug Club we have 10,000 exotic Sluggies for you to collect! <br /><br/> Our 3 person team has personally cared for these creatures within the Ethereum Blockchain and are looking forward to them going to good homes!
               </p>
               <p className="text-lg text-black my-6">
               <strong>LAUNCH DATE:</strong> September 28th 11:59 PM EST<br />
@@ -99,9 +99,22 @@ export default function Home() {
       <br/>
       <br/>
 
+      <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75 md:w-2/3 w-4/5" id="rarity">
+        <h2 className="text-7xl amatic text-center text-green-700 my-4">Rarity</h2>
+        <div className="w-3/4 items-center justify-self-center col-span-3">
+          <p className="text-black text-lg my-6">
+            Our Sluggies are programmatically generated utlizing the Python language. Our artist BEE has hand-drawn over 100 traits between shells, mouths, eyes, props and more! No 2 Sluggies exactly alike but each one has it's own uniqueness it brings to the Garden! <br/>
+            There are also drawn 8 individually unique one-of-a-kind Sluggies hidden throughout the bunch!
+          </p>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
       <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75 md:w-2/3 w-4/5" id="roadmap">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Roadmap</h2>
-        <div id="roadmap" className="flex grid grid-cols-3">
+        <div className="flex grid grid-cols-3">
           <div className="w-3/4 items-center justify-self-center col-span-3">
             <p className="text-black text-lg my-6">
             Why collect a Sluggie? 
@@ -114,7 +127,7 @@ export default function Home() {
             <br/>
             <br/>
             
-            Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to the community and foundations, making us one of the largest donators from the NFT bunch!
+            Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to our members and foundations, before minting is over! <br/>
 
             <br/>
             <br/>
@@ -124,9 +137,7 @@ export default function Home() {
             <br/> 
             <br/>
 
-            From free Sluggie drops to community drawings for ETH,
-
-            along with donations to various charities!
+            From free Sluggie drops, member drawings for ETH, member Slug Garden NFT giveaway, to donations to various charities and more!
 
             <br/>
             <br/>
@@ -140,39 +151,40 @@ export default function Home() {
           <div className="col-span-3 xl:col-span-1">
             <div class="grid grid-rows-5 justify-center place-self-center">
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">Launch</h3>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
                   <li className="line-through">Random community giveaway</li>
-                  <li className="line-through">Social media raffle for a free sluggie</li>
-                  <li>Random buyer gets free sluggie</li>
+                  <li className="line-through">Social media raffle for a free Sluggie</li>
+                  <li>Next Minter gets free Sluggie</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">25% Sold</h3>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">25% Member ETH & Sluggie Giveaways</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
-                  <li>Random member with under 9 or less gets free sluggie</li>
+                  <li>Member drawing for free Sluggie</li>
                   <li>Member drawing for a chance at 3 spots to win 2 ETH each</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Sold</h3>
-                <ul class="list-disc list-inside pl-4 text-sm">
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">50% Charity Donations</h3>
+                <ul class="list-disc list-inside pl-4 text-md">
                   <li>Donate 10 ETH to <a className="underline" href="https://girlswhocode.com/">Girls Who Code</a></li>
                   <li>Donate 10 ETH to <a className="underline" href="https://paulwalkerfoundation.org/pages/about-us">Paul Walker Foundation</a></li>
-                  <li>Donate 10 ETH to TBA</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">75% Sold</h3>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">75% Slug Garden NFT for all current members & ETH drawing</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
-                  <li>Community drawing for a chance at 3 spots to win 5 ETH each</li>
-                  <li>Community drawing for a chance at 10 spots to win a free sluggie</li>
+                  <li>Members drawing for a chance at 5 spots to win 5 ETH each</li>
+                  <li>Members recieve uniquely generated Slug Garden NFTs</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-3xl amatic text-center text-green-700 my-4">100% Sold</h3>
+                <h3 className="text-3xl amatic text-center text-green-700 my-4">100% The Garden is open</h3>
                 <ul class="list-disc list-inside pl-4 text-sm">
-                  <li>Members only area announced</li>
+                  <li>The Garden is opened! We envision an open garden for our Sluggies to roam around and interact with one another, win various prizes and more! <br/>
+                   STAY TUNED!
+                   </li>
                 </ul>
               </div>
             </div>

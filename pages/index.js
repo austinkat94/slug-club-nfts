@@ -105,11 +105,13 @@ export default function Home() {
 
       <div className="flex flex-col rounded-md shadow bg-yellow-100 bg-opacity-75 md:w-2/3 w-4/5" id="rarity">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Rarity</h2>
-        <div className="w-3/4 items-center justify-self-center col-span-3">
-          <p className="text-black text-lg my-6">
-            Our Sluggies are programmatically generated utlizing the Python language. Our artist BEE has hand-drawn over 100 traits between shells, mouths, eyes, props and more! No 2 Sluggies exactly alike but each one has it's own uniqueness it brings to the Garden! <br/>
-            There are also drawn 8 individually unique one-of-a-kind Sluggies hidden throughout the bunch!
-          </p>
+        <div className="flex grid grid-cols-3">
+          <div className="w-3/4 items-center justify-self-center col-span-3">
+            <p className="text-black text-lg my-6">
+              Our Sluggies are programmatically generated utlizing the Python language. Our artist BEE has hand-drawn over 100 traits between shells, mouths, eyes, props and more! No 2 Sluggies exactly alike but each one has it's own uniqueness it brings to the Garden! <br/>
+              There are also drawn 8 individually unique one-of-a-kind Sluggies hidden throughout the bunch!
+            </p>
+          </div>
         </div>
       </div>
 

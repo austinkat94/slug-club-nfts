@@ -108,7 +108,7 @@ export default function Home() {
         <div className="flex grid grid-cols-3">
           <div className="w-3/4 items-center justify-self-center col-span-3">
             <p className="text-black text-lg my-6">
-              Our Sluggies are programmatically generated utlizing the Python language. Our artist BEE has hand-drawn over 100 traits between shells, mouths, eyes, props and more! No 2 Sluggies exactly alike but each one has it's own uniqueness it brings to the Garden! There are also drawn 8 individually unique one-of-a-kind Sluggies hidden throughout the bunch!
+              Our Sluggies are programmatically generated utlizing the Python language and are living on the Ethereum blockchain. Our artist BEE has hand-drawn over 100 traits between shells, mouths, eyes, props and more! No 2 Sluggies exactly alike but each one has it's own uniqueness it brings to the Garden! There are also 8 individually unique one-of-a-kind Sluggies hidden throughout the bunch!
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
             <br/>
             <br/>
             
-            Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to our members and foundations, before minting is over! <br/>
+            Our goal is to donate <span class="font-bold">over 50 ETH tokens</span> to our members and foundations, before minting is over! AND 100% of royalties will be 100% for members through monthly "garden fertilizing"!
 
             <br/>
             <br/>

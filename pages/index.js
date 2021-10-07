@@ -147,7 +147,7 @@ export default function Home() {
             <br/>
             <br/>
 
-            Sluggies may be small but they’re looking to make a <span class="font-bold">BIG</span> impact! 
+            Sluggies may be small but they’re looking to make a <span class="font-bold">BIG</span> impact!
             </p>
           </div>
           <div className="col-span-3 xl:col-span-2">

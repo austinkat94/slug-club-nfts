@@ -159,8 +159,8 @@ export default function Home() {
           </div>
           <br/>
           <div className="col-span-3">
-            <div class="grid grid-rows-5 justify-center place-self-center">
-              <div className="w-1/2">
+            <div class="grid grid-rows-5 place-self-center">
+              <div>
                 <h3 className="text-4xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>
                 <ul class="list-disc list-outside text-center pl-4 text-md">
                   <li className="line-through">Random community giveaway</li>

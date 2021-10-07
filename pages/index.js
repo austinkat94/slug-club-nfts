@@ -154,10 +154,10 @@ export default function Home() {
             Sluggies may be small but they’re looking to make a <span class="font-bold">BIG</span> impact!
             </p>
           </div>
-          <div className="col-span-3 xl:col-span-2">
+          <div className="col-span-3 ">
             <img src="/images/Roadmap.png"/>
           </div>
-          <div className="col-span-3 xl:col-span-1">
+          <div className="col-span-3">
             <div class="grid grid-rows-5 justify-center place-self-center">
               <div>
                 <h3 className="text-4xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>

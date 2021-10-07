@@ -234,7 +234,7 @@ export default function Home() {
               <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">KAT</h3>
             </div>
           </a>
-          <a href="">
+          <a href="https://twitter.com/beethesluggie">
             <div className="flex flex-col  my-6" style={{width:"360px"}}>
                 <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
                 <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">BEE</h3>

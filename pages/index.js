@@ -161,13 +161,15 @@ export default function Home() {
                   <li className="line-through">Random community giveaway</li>
                   <li className="line-through">Social media raffle for a free Sluggie</li>
                   <li>Next Minter gets free Sluggie</li>
+                  <li>Private Slug CLub Members Discord opened</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-4xl amatic text-center text-green-700 my-4">25% Member ETH & Sluggie Giveaways</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">25% Member Giveaways</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>Member drawing for free Sluggie</li>
-                  <li>Member drawing for a chance at 3 spots to win 2 ETH each</li>
+                  <li>Member drawing for a chance at 5 spots to win 2 ETH each</li>
+                  <li>Free 3D printed Sluggie for first members!</li>
                 </ul>
               </div>
               <div>
@@ -178,14 +180,23 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-4xl amatic text-center text-green-700 my-4">75% Slug Garden NFT for all current members & ETH drawing</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">60% Slug Garden NFTs opened & The Shed is open!</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
-                  <li>Members drawing for a chance at 5 spots to win 5 ETH each</li>
-                  <li>Members recieve uniquely generated Slug Garden NFTs</li>
+                <li>Members recieve uniquely generated Slug Garden NFTs</li>
+                <li>The Shed is open in The Garden! We envision our Garden to be a place for our members to interact with one another while winning various prizes. While the Garden is being worked on, The Shed is open for business! This is our members only merchandise shop!</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-4xl amatic text-center text-green-700 my-4">100% The Garden is open</h3>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">75% Member giveaways & Slug Club Garden is funded!</h3>
+                <ul class="list-disc list-inside pl-4 text-md">
+                  <li>Members drawing for a chance at 5 spots to win 5 ETH each</li>
+                  <li>Members drawing for a chance at 10 spots to win 2 ETH each</li>
+                  <li>Members drawing for a chance at 20 spots to win 1 ETH each</li>
+                  <li>Funding our Slug Club Garden for our members events and more!</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-4xl amatic text-center text-green-700 my-4">100% The Garden is open!</h3>
                 <ul class="list-disc list-inside pl-4 text-md">
                   <li>The Garden is opened! We envision an open garden for our Sluggies to roam around and interact with one another, win various prizes and more! <br/>
                    STAY TUNED!
@@ -200,18 +211,24 @@ export default function Home() {
       <div id="team" className="mx-12 my-16 ">
         <h2 className="text-7xl amatic text-center text-green-700 my-4">Slug Club Team</h2>
         <div className="flex justify-around flex-wrap">
-          <div className="flex flex-col  my-6" style={{width:"360px"}}>
-            <div className="cards-image-mask"><img src="/images/kat.png" width="360px" alt="" className="cards-image" /></div>
-            <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">KAT</h3>
-          </div>
-          <div className="flex flex-col  my-6" style={{width:"360px"}}>
-              <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
-              <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">BEE</h3>
-          </div>
-          <div className="flex flex-col  my-6" style={{width:"360px"}}>
-              <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
-              <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">RIA</h3>
-          </div>
+          <a href="https://twitter.com/colbreezekat">
+            <div className="flex flex-col  my-6" style={{width:"360px"}}>
+              <div className="cards-image-mask"><img src="/images/kat.png" width="360px" alt="" className="cards-image" /></div>
+              <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">KAT</h3>
+            </div>
+          </a>
+          <a href="">
+            <div className="flex flex-col  my-6" style={{width:"360px"}}>
+                <div className="cards-image-mask"><img src="/images/bee.png" width="360px" alt="" className="cards-image" /></div>
+                <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">BEE</h3>
+            </div>
+          </a>
+          <a href="https://twitter.com/riathesluggie">
+            <div className="flex flex-col  my-6" style={{width:"360px"}}>
+                <div className="cards-image-mask"><img src="/images/ria.png" width="360px" alt="" className="cards-image" /></div>
+                <h3 className="my-4 text-center text-5xl amatic text-center text-green-700">RIA</h3>
+            </div>
+          </a>
         </div>
       </div> 
     </div>  

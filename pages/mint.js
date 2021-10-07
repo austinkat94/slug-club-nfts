@@ -174,7 +174,6 @@ export default function Mint() {
                       <a href="https://discord.gg/K2y37ceT" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Discord</a>
 
                       <a href="https://opensea.io/collection/the-slug-club" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Opensea</a>
-
                       <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Social Media</a>
                     </div>
                   </div>

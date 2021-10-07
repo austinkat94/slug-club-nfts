@@ -160,9 +160,9 @@ export default function Home() {
           <br/>
           <div className="col-span-3">
             <div class="grid grid-rows-5 justify-center place-self-center">
-              <div>
+              <div className="w-1/2">
                 <h3 className="text-4xl amatic text-center text-green-700 my-4">Launch Free Giveaways</h3>
-                <ul class="list-disc list-outside content-center pl-4 text-md">
+                <ul class="list-disc list-outside text-center pl-4 text-md">
                   <li className="line-through">Random community giveaway</li>
                   <li className="line-through">Social media raffle for a free Sluggie</li>
                   <li>Next Minter gets free Sluggie</li>

@@ -9,9 +9,9 @@ const slug_api = async(req, res) => {
 
   const { db } = await connectToDatabase();	
 	const traits = await db
-    .collection("Sluggies_metadata")
+    .collection("Sluggies")
     .find({})
-	  .toArray();
+    .toArray();
   
   // SOME WEB3 STUFF TO CONNECT TO SMART CONTRACT
 
@@ -111,11 +111,14 @@ const slug_api = async(req, res) => {
         ]
       }
     }
+    
     res.statusCode = 200
     res.json(metadata)
+    //db.close();
   } else {
     res.statuscode = 404
     res.json({error: "The slug you requested is out of range"})
+    //db.close();
   }
 }
 

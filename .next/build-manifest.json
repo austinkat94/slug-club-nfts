@@ -14,10 +14,10 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
+    "/SlugMembers/[wallet]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/SlugMembers/[wallet].js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

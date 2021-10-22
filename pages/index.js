@@ -1,6 +1,122 @@
 import Head from 'next/head'
+import Web3 from "web3";
+import { useState, useEffect } from 'react';
+
+import {ADDRESS, ABI} from "../config.js";
 
 export default function Home() {
+
+  // FOR WALLET
+  const [signedIn, setSignedIn] = useState(false)
+
+  const [walletAddress, setWalletAddress] = useState(null)
+
+  // FOR MINTING
+  const [how_many_slugs, set_how_many_slugs] = useState(1)
+
+  const [slugContract, setSlugContract] = useState(null)
+
+  // INFO FROM SMART Contract
+
+  const [totalSupply, setTotalSupply] = useState(0)
+
+  const [saleIsActive, setSaleIsActive] = useState(false)
+
+  const [slugPrice, setSlugPrice] = useState(0)
+
+  const [number_of_sluggies, setBalanceOf] = useState(0)
+
+  useEffect( async() => { 
+    signIn()
+
+  }, [])
+
+  async function signIn() {
+    if (typeof window.web3 !== 'undefined') {
+      // Use existing gateway
+      window.web3 = new Web3(window.ethereum);
+     
+    } else {
+      alert("No Ethereum interface injected into browser. Read-only access");
+    }
+    web3.eth.getAccounts().then((possible_accounts) => {console.log(possible_accounts); if(possible_accounts > 0){var wallet1 = possible_accounts[0];setWalletAddress(wallet1);setSignedIn(true);callContractData(wallet1);}else{
+      window.ethereum.enable()
+        .then(function (accounts) {
+          window.web3.eth.net.getNetworkType()
+          // checks if connected network is mainnet (change this to rinkeby if you wanna test on testnet)
+          .then((network) => {console.log(network);if(network != "main"){alert("You are on " + network+ " network. Change network to mainnet or you won't be able to do anything here")} });  
+          let wallet = accounts[0]
+          setWalletAddress(wallet)
+          setSignedIn(true)
+          callContractData(wallet)
+    })
+    .catch(function (error) {
+    // Handle error. Likely the user rejected the login
+    console.error(error)
+    })
+  }})
+    
+  }
+
+//
+
+  async function signOut() {
+    setSignedIn(false)
+  }
+  
+  async function callContractData(wallet) {
+
+    const slugContract = new web3.eth.Contract(ABI, ADDRESS)
+    console.log(slugContract)
+    setSlugContract(slugContract)
+
+    const salebool = await slugContract.methods.saleIsActive().call()
+    console.log("saleisActive" , salebool)
+    setSaleIsActive(salebool)
+
+    const totalSupply = await slugContract.methods.totalSupply().call() 
+    setTotalSupply(totalSupply)
+
+    const slugPrice = await slugContract.methods.slugPrice().call() 
+    console.log(slugPrice)
+    setSlugPrice(slugPrice)
+
+    const number_of_sluggies = await slugContract.methods.balanceOf(wallet).call() 
+    console.log(number_of_sluggies)
+    setBalanceOf(number_of_sluggies)
+   
+  }
+
+  async function mintSluggies(how_many_sluggies) {
+    if (slugContract) {
+
+      try{
+        const price = Number(slugPrice)  * how_many_sluggies 
+
+        const gasAmount = await slugContract.methods.mintSluggies(how_many_sluggies).estimateGas({from: walletAddress, value: price})
+        console.log("estimated gas",gasAmount)
+
+        console.log({from: walletAddress, value: price})
+
+        slugContract.methods
+              .mintSluggies(how_many_sluggies)
+              .send({from: walletAddress, value: price, gas: String(gasAmount)})
+              .on('transactionHash', function(hash){
+                console.log("transactionHash", hash)
+              })
+      }
+      catch(e) {
+        var timeElapsed = Date.now();
+        var today = new Date(timeElapsed);
+        var div = document.getElementById('error_log');
+
+        div.innerHTML = today.toUTCString() + " - " + e.message;
+      }
+    } else {
+        console.log("Wallet not connected")
+    }
+    
+  };
 
   return (
     <div id="body" className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -48,8 +164,6 @@ export default function Home() {
                   <div class="flex space-x-4">
                     <a href="/#about" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium" aria-current="page">About</a>
 
-                    <a href="/mint" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Mint!</a>
-
                     <a href="/#roadmap" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Roadmap</a>
 
                     <a href="/#team" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Team</a>
@@ -59,6 +173,12 @@ export default function Home() {
                     <a href="https://opensea.io/collection/the-slug-club" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Opensea</a>
 
                     <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Social Media</a>
+
+                    {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-green-700 hover:text-gray-100 rounded-md">Connect Wallet with Metamask</button>
+            :
+            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-green-700 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
+
+
                   </div>
                 </div>
               </div>
@@ -68,8 +188,6 @@ export default function Home() {
           <div class="sm:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
               <a href="/#about" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">About</a>
-
-              <a href="/mint" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Mint!</a>
 
               <a href="/#roadmap" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Roadmap</a>
 
@@ -100,7 +218,42 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <a href="/mint" className="mt-4 text-4xl amatic border-6 bg-green-700 bg-opacity-75 rounded-md text-white hover:text-green-400 p-2 ">Go To Minting Page!</a> 
+          <div className="md:w-2/3 w-4/5">
+            <div className="mt-6 border-b-2 py-6">
+
+              <div className="flex flex-col items-center">
+
+                  <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none my-4 ">Total Sluggies Minted:  <span className="text-green-700 text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
+
+                  <div id="mint" className="flex justify-around  mt-8 mx-6">
+                    <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Give Me</span>
+                    
+                    <input 
+                                        type="number" 
+                                        min="1"
+                                        max="20"
+                                        value={how_many_slugs}
+                                        onChange={ e => set_how_many_slugs(e.target.value) }
+                                        name="" 
+                                        className=" pl-4 text-4xl amatic inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
+                                    />
+                    
+                    <span className="flex amatic text-5xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Sluggies!</span>
+      
+                  </div>
+                  {saleIsActive ? 
+                  <button onClick={() => mintSluggies(how_many_slugs)} className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75 rounded-md text-white hover:text-green-400 p-2 ">Mint {how_many_slugs} sluggies for {(slugPrice * how_many_slugs) / (10 ** 18)} ETH + GAS</button>        
+                    : <button className="mt-4 amatic text-4xl border-6 bg-green-700 bg-opacity-75 rounded-md text-white hover:text-green-400 p-2 ">Sale is not active or no wallet is connected</button>        
+              
+                }
+                <br />
+
+                <div id="error_log" className="md:w-2/3 w-4/5 rounded-md shadow bg-yellow-100 bg-opacity-75 text-red-600"></div>
+
+                <span className="flex text-black amatic text-md">Please ensure your wallet has funds for the cost of the sluggies as well as gas fees, otherwise button won't load purchasing pop-up. Check console log if unsure.</span>               
+              </div> 
+            </div>
+          </div>  
         </div> 
       </div>
 
@@ -247,6 +400,12 @@ export default function Home() {
             </div>
           </a>
         </div>
+        <div className="flex flex-col items-center">
+          <a href = "mailto:taylormadenft@gmail.com?subject = SluggieSupport&body = SupportMessage" className="button amatic text-4xl position-self-center rounded-md hover:text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>Request Support</a>
+                </div>
       </div> 
     </div>  
     )

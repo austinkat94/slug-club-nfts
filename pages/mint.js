@@ -24,6 +24,8 @@ export default function Mint() {
 
   const [slugPrice, setSlugPrice] = useState(0)
 
+  const [number_of_sluggies, setBalanceOf] = useState(0)
+
   useEffect( async() => { 
 
     signIn()
@@ -78,6 +80,10 @@ export default function Mint() {
     const slugPrice = await slugContract.methods.slugPrice().call() 
     console.log(slugPrice)
     setSlugPrice(slugPrice)
+
+    const number_of_sluggies = await slugContract.methods.balanceOf(walletAddress).call() 
+    console.log(number_of_sluggies)
+    setBalanceOf(number_of_sluggies)
    
   }
   
@@ -111,10 +117,6 @@ export default function Mint() {
     }
     
   };
-
-  
-
-
 
   return (
     <div id="body" className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -175,6 +177,10 @@ export default function Mint() {
 
                       <a href="https://opensea.io/collection/the-slug-club" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Opensea</a>
                       <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Social Media</a>
+
+                      {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Connect Wallet with Metamask</button>
+            :
+            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
                     </div>
                   </div>
                 </div>
@@ -200,11 +206,6 @@ export default function Mint() {
             </div>
           </nav>
         </div>
-          <div className="flex auth my-8 font-bold  justify-center items-center vw2">
-            {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Connect Wallet with Metamask</button>
-            :
-            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
-          </div>
         </div>
 
         <div className="md:w-2/3 w-4/5">

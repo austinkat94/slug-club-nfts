@@ -178,7 +178,8 @@ export default function Home() {
             :
             <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-green-700 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
 
-
+                    {number_of_sluggies > 0 & signedIn ? <a href={"SlugMembers/"+walletAddress+".js"} class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Got to Your Garden!</a>
+                    : ""}
                   </div>
                 </div>
               </div>
@@ -198,6 +199,9 @@ export default function Home() {
               <a href="https://opensea.io/collection/the-slug-club" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Opensea</a>
 
               <a href="https://linktr.ee/slugclubnft" class="text-black-300 hover:bg-green-700 hover:bg-opacity-75 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Social Media</a>
+              {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-green-700 hover:text-gray-100 rounded-md">Connect Wallet with Metamask</button>
+            :
+            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-gray-500 py-2 px-4 mx-4 shadow-lg hover:bg-green-700 hover:text-gray-100 rounded-md">Wallet Connected: {walletAddress}</button>}
             </div>
           </div>
         </nav>

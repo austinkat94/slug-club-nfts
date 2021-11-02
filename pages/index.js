@@ -323,8 +323,8 @@ export default function Home() {
                   <ul class="w-3/4 list-disc list-outside pl-4 text-md">
                     <li className="line-through">Random community giveaway</li>
                     <li className="line-through">Social media raffle for a free Sluggie</li>
-                    <li>Next Minter gets free Sluggie</li>
-                    <li>Private Slug CLub Members Discord opened</li>
+                    <li className="line-through">Next Minter gets free Sluggie</li>
+                    <li>Private Slug Club Members Discord opened</li>
                   </ul>
                 </div>
               </div>
